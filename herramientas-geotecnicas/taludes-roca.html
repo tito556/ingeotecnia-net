@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Estabilidad de taludes y macizos rocosos · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca">
+<meta property="og:title" content="Estabilidad de taludes y macizos rocosos · IngeoTecnia">
+<meta property="og:description" content="Seis calculadoras de estabilidad: FS talud infinito, Bishop simplificado, Hoek-Brown a Mohr-Coulomb, UCS desde PLT/BTS, cuña rocosa Hoek & Bray y estabilidad">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Estabilidad de taludes y macizos rocosos · IngeoTecnia">
+<meta name="twitter:description" content="Seis calculadoras de estabilidad: FS talud infinito, Bishop simplificado, Hoek-Brown a Mohr-Coulomb, UCS desde PLT/BTS, cuña rocosa Hoek & Bray y...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Estabilidad de taludes y macizos rocosos — Bishop, Hoek-Brown · 6 calculadoras",
+      "applicationCategory": "EngineeringApplication",
+      "applicationSubCategory": "Geotechnical Engineering Calculator",
+      "operatingSystem": "Web",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca",
+      "description": "Seis calculadoras de estabilidad: FS talud infinito, Bishop simplificado, Hoek-Brown a Mohr-Coulomb, UCS desde PLT/BTS, cuña rocosa Hoek & Bray y estabilidad de terraplenes. Calculadora gratuita de Mecánica de Suelos.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IngeoTecnia · Estudios Geotécnicos Chile",
+        "url": "https://ingeotecnia.net/"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca",
+      "name": "Estabilidad de taludes y macizos rocosos — Bishop, Hoek-Brown · 6 calculadoras",
+      "description": "Seis calculadoras de estabilidad: FS talud infinito, Bishop simplificado, Hoek-Brown a Mohr-Coulomb, UCS desde PLT/BTS, cuña rocosa Hoek & Bray y estabilidad de terraplenes. Calculadora gratuita de Mecánica de Suelos.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://ingeotecnia.net/",
+        "name": "IngeoTecnia · Estudios Geotécnicos Chile"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ingeotecnia.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Herramientas geotécnicas",
+          "item": "https://ingeotecnia.net/herramientas-geotecnicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Estabilidad de taludes y macizos rocosos — Bishop, Hoek-Brown · 6 calculadoras"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<meta name="description" content="Seis calculadoras de estabilidad: FS talud infinito, Bishop simplificado, Hoek-Brown a Mohr-Coulomb, UCS desde PLT/BTS, cuña rocosa Hoek & Bray y...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca">
+
+<style>
+.calc-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.9rem;margin:1.2rem 0 2rem}
+.calc-card{display:block;padding:1rem 1.1rem;background:#fff;border:1px solid #e2e8f0;border-radius:9px;text-decoration:none;color:inherit;transition:all .15s}
+.calc-card:hover{border-color:#0d9488;box-shadow:0 3px 10px rgba(13,148,136,.08);transform:translateY(-1px);text-decoration:none}
+.calc-card h3{margin:0 0 .3rem;font-size:.98rem;font-weight:700;color:#1e3a5f;line-height:1.3}
+.calc-card p{margin:0;font-size:.83rem;color:#64748b;line-height:1.45}
+.other-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem;margin:1rem 0 1rem;list-style:none;padding:0}
+.other-cats li{margin:0}
+.other-cats a{display:block;padding:.55rem .8rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:.88rem;font-weight:500;color:#1e3a5f;text-decoration:none;transition:all .15s}
+.other-cats a:hover{background:#f0fdfa;border-color:#0d9488;color:#0d9488;text-decoration:none}
+</style>
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/CollectionPage">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <span>Taludes y roca</span>
+</nav>
+
+<h1>Estabilidad de taludes y macizos rocosos</h1>
+
+<p class="lead">Este conjunto de herramientas permite evaluar estabilidad en taludes de suelo y roca mediante el análisis de talud infinito, el método de Bishop simplificado, la conversión del criterio de Hoek-Brown a parámetros Mohr-Coulomb equivalentes, la resistencia a compresión simple desde ensayos de carga puntual y tracción brasileña, cuñas rocosas según Hoek y</p>
+
+<h2>Calculadoras de esta categoría</h2>
+<div class="calc-list">
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>FS talud infinito</h3>
+    <p>Factor de seguridad en laderas largas con capa paralela, con y sin flujo.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>Bishop simplificado</h3>
+    <p>Método de dovelas circular iterativo con presión de poros para taludes en suelo.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>Hoek-Brown → Mohr-Coulomb</h3>
+    <p>Conversión de mb, s, a y GSI a c' y φ' equivalentes para software convencional.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>UCS desde PLT/BTS</h3>
+    <p>Resistencia a compresión simple desde carga puntual Is(50) y ensayo brasileño.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>Cuña rocosa Hoek & Bray</h3>
+    <p>Estabilidad de cuñas formadas por dos discontinuidades en taludes de roca.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/taludes-roca.html">
+    <h3>Estabilidad de terraplenes</h3>
+    <p>Verificación circular rápida y sin drenaje para terraplenes sobre suelos blandos.</p>
+  </a>
+</div>
+
+<h2>Tipo de falla y método adecuado</h2>
+<p>Para suelo homogéneo con superficie de falla circular se usa Bishop simplificado (preciso y ampliamente aceptado). Para laderas largas con estrato débil paralelo se aplica talud infinito. En macizos rocosos fracturados se usa Hoek-Brown (criterio no lineal) y, si hay discontinuidades que forman cuñas, el análisis cinemático de Hoek & Bray. En terraplenes sobre arcilla blanda se verifica por análisis sin drenaje (ϕ = 0, su). Para casos complejos con geometría irregular se recurre a software (Slide2, GeoStudio, PLAXIS).</p>
+
+<h2>Otras categorías</h2>
+<ul class="other-cats">
+  <li><a href="/herramientas-geotecnicas/clasificacion-suelos">Clasificación de suelos</a></li>
+  <li><a href="/herramientas-geotecnicas/">Relaciones y compactación</a></li>
+  <li><a href="/herramientas-geotecnicas/capacidad-portante">Capacidad portante y fundaciones</a></li>
+  <li><a href="/herramientas-geotecnicas/empujes-muros">Empujes y muros</a></li>
+  <li><a href="/herramientas-geotecnicas/">Pavimentos</a></li>
+  <li><a href="/herramientas-geotecnicas/sismico.html">Análisis sísmico</a></li>
+  <li><a href="/herramientas-geotecnicas/hidraulica.html">Hidráulica de suelos</a></li>
+  <li><a href="/herramientas-geotecnicas/ensayos">Ensayos in situ y laboratorio</a></li>
+  <li><a href="/herramientas-geotecnicas">Zona sísmica por país (ver home)</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Estabilidad de taludes y macizos rocosos",
+  "description": "Seis calculadoras: FS infinito, Bishop, Hoek-Brown, UCS, cuña rocosa y terraplenes. Calculadora gratuita de Mecánica de Suelos.",
+  "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca",
+  "inLanguage": "es",
+  "hasPart": [
+    {"@type": "SoftwareApplication", "name": "FS talud infinito", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/fs-talud-infinito"},
+    {"@type": "SoftwareApplication", "name": "Bishop simplificado", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/bishop-simplificado"},
+    {"@type": "SoftwareApplication", "name": "Hoek-Brown a Mohr-Coulomb", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/hoek-brown"},
+    {"@type": "SoftwareApplication", "name": "UCS desde PLT/BTS", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/ucs-plt-bts"},
+    {"@type": "SoftwareApplication", "name": "Cuña rocosa Hoek & Bray", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/cuna-rocosa"},
+    {"@type": "SoftwareApplication", "name": "Estabilidad de terraplenes", "url": "https://ingeotecnia.net/herramientas-geotecnicas/taludes-roca/estabilidad-terraplenes"}
+  ]
+}
+</script>
+
+</article>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>

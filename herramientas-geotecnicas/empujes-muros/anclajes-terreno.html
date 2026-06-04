@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Anclajes al Terreno · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno">
+<meta property="og:title" content="Anclajes al Terreno · IngeoTecnia">
+<meta property="og:description" content="Diseño de anclajes al terreno: capacidad de arranque, longitud mínima del bulbo inyectado y tensión admisible en cables y barras (Littlejohn-Bruce 1976,">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anclajes al Terreno · IngeoTecnia">
+<meta name="twitter:description" content="Diseño de anclajes al terreno: capacidad de arranque, longitud mínima del bulbo inyectado y tensión admisible en cables y barras (Littlejohn-Bruce 1976...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<meta name="description" content="Diseño de anclajes al terreno: capacidad de arranque, longitud mínima del bulbo inyectado y tensión admisible en cables y barras (Littlejohn-Bruce...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno">
+
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+
+<!-- AUTO-HOWTO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar la calculadora Geotechnical Engineering",
+  "description": "Pasos para usar esta calculadora gratuita de Mecánica de Suelos en la categoría Empujes y Muros de Contención.",
+  "totalTime": "PT2M",
+  "inLanguage": "es",
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Calculadora de Mecánica de Suelos"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Ingresa los datos del suelo",
+      "text": "Completa los parámetros requeridos según el tipo de cálculo (Empujes y Muros de Contención). Los campos están etiquetados con sus unidades estándar.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno#input"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Selecciona la normativa de tu país",
+      "text": "Elige el código aplicable (NCh, ASTM, AASHTO, Eurocode 7/8, FHWA u otros). La calculadora ajusta los coeficientes y factores de seguridad automáticamente.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno#norma"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Lee el resultado y descárgalo",
+      "text": "El resultado aparece con la fórmula desarrollada paso a paso. Puedes copiar los valores o exportar a Excel para anexar a tu informe geotécnico.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno#resultado"
+    }
+  ]
+}
+</script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/SoftwareApplication">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <a href="/herramientas-geotecnicas/empujes-muros">Empujes y muros</a> › <span>Anclajes al terreno</span>
+</nav>
+
+<h1>Calculadora Anclajes al Terreno — capacidad bulbo inyectado y longitud</h1>
+
+<p class="lead">Los sistemas de anclaje trasladan fuerzas de tracción desde muros de contención, túneles u obras provisorias hacia estratos resistentes mediante un bulbo inyectado. Esta herramienta calcula la capacidad última al arranque y la longitud mínima del bulbo para anclajes activos pretensados,</p>
+
+<h2>¿Qué es y cuándo se aplica?</h2>
+<p>Un anclaje tiene tres partes: cabeza (donde se aplica la tensión en la estructura), tramo libre (no adherido al terreno, cubierto con vaina plástica) y bulbo (zona adherida al terreno por inyección de lechada de cemento a presión). El tramo libre garantiza que la tensión se transfiera lejos de la superficie de falla; el bulbo moviliza la fricción con el terreno para resistir la tracción. Se aplica en muros anclados para excavaciones urbanas (subterráneos, metro), estabilización de taludes rocosos con cables post-tensados, cimentaciones de torres de transmisión sometidas a tensión, estructuras marinas (dique seco, esclusas), y túneles NATM con pernos. No se usa en arcillas blandas (Su &lt; 40 kPa) por riesgo de creep.</p>
+
+<h2>Fórmulas aplicadas</h2>
+<div class="formulas">
+<p><strong>Capacidad última en suelos granulares (Littlejohn-Bruce 1976):</strong></p>
+<p>Tult = π · D · L · σ'v · K · tan φ · n, con n = factor multiplicador por presión inyección</p>
+<p>D = diámetro efectivo del bulbo (&gt; diámetro nominal por penetración de lechada); L = longitud del bulbo; σ'v = tensión efectiva vertical a la mitad del bulbo; K = coeficiente lateral (0,5 a 2 según inyección a baja o alta presión); n = 1 para inyección normal, hasta 3 para post-inyección</p>
+<p><strong>Simplificación práctica (FHWA):</strong></p>
+<p>Tult = π · D · L · τult, con τult = fricción lateral unitaria del terreno</p>
+<p>τult: arenas 120-380 kPa, gravas 200-700 kPa, arcillas rígidas 50-150 kPa</p>
+<p><strong>Capacidad última en rocas:</strong></p>
+<p>Tult = π · D · L · qa/10, con qa = UCS de la roca sana (Hoek 1983, factor de seguridad implícito)</p>
+<p><strong>Tensión admisible en el cable/barra:</strong></p>
+<p>Tadm,acero = 0,6 · fyk · A_acero (acero pretensado fyk típico 1.860 MPa, 7 torones φ = 15,2 mm área por torón 140 mm²)</p>
+<p><strong>Longitud mínima del bulbo (diseño):</strong></p>
+<p>Lbulbo = FS · Tservicio / (π · D · τult), FS = 2 para permanentes, 1,5 temporales</p>
+<p><strong>Longitud mínima del tramo libre:</strong> Lfree ≥ 5 m o profundidad a la superficie activa de falla del muro + 1,5 m (el mayor)</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Calculadora interactiva de anclajes postensados">
+<h2>Calcular en línea</h2>
+<p class="calc-intro">Ingresa carga de servicio, diámetro de bulbo y τult para obtener la longitud del bulbo y capacidades.</p>
+<form id="calc-form" novalidate>
+<div class="calc-row">
+<label>Carga servicio T (kN)<input type="number" id="T" step="1" value="400" min="10" max="5000" required></label>
+<label>Diámetro bulbo D (m)<input type="number" id="D" step="0.01" value="0.15" min="0.08" max="0.6" required></label>
+<label>τult bulbo-terreno (kPa)<input type="number" id="tau" step="10" value="350" min="50" max="2000" required></label>
+<label>Factor seguridad FS<input type="number" id="FS" step="0.1" value="2.5" min="1.5" max="4" required></label>
+</div>
+<button type="submit">Calcular longitud bulbo</button>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note">τult referencia: arena suelta 100-150 · grava densa 300-500 · roca meteorizada 600-1.000 kPa. FS = 2,5 permanentes; 1,5 temporales (PTI).</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicable">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<script src="/widgets/visor-normas.js" data-slug="anclajes-terreno"></script>
+<script>
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Cerrar marco normativo':'📖 Ver marco normativo';});})();
+</script>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+</style>
+<script>
+(function(){
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var T=parseFloat(document.getElementById('T').value);
+var D=parseFloat(document.getElementById('D').value);
+var tau=parseFloat(document.getElementById('tau').value);
+var FS=parseFloat(document.getElementById('FS').value);
+var out=document.getElementById('calc-resultado');
+if(!isFinite(T)||!isFinite(D)||!isFinite(tau)||!isFinite(FS)||T<=0||D<=0||tau<=0||FS<=0){out.innerHTML='<span class="err">Ingresa valores numéricos positivos.</span>';return;}
+var Lbulbo=FS*T/(Math.PI*D*tau);
+var Tult=Math.PI*D*tau*Lbulbo;
+var Tadm=Tult/FS;
+out.innerHTML='<span class="ok">L_bulbo = '+Lbulbo.toFixed(2)+' m · Tult total = '+Tult.toFixed(1)+' kN · Tadm = '+Tadm.toFixed(1)+' kN</span>'+
+'Área lateral bulbo = π·D·L = '+(Math.PI*D*Lbulbo).toFixed(2)+' m² · τ de trabajo = '+(T/(Math.PI*D*Lbulbo)).toFixed(1)+' kPa.<br>'+
+'Longitud libre mínima recomendada: 5 m o superficie activa + 1,5 m (el mayor).<br>'+
+'<span style="color:#64748b;font-size:.85em">Fórmula: L_bulbo = FS·T / (π·D·τult); Tult = π·D·τult·L</span>';
+});
+})();
+</script>
+
+<h2>Ejemplo de cálculo</h2>
+<table class="ejemplo">
+<caption>Anclaje para muro pantalla excavación 12 m — edificio de oficinas en zona corporativa urbana</caption>
+<thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Tensión de servicio T</td><td>400 kN (por anclaje)</td></tr>
+<tr><td>Tipo de terreno del bulbo</td><td>Grava compacta (σ'v a 15 m profundidad)</td></tr>
+<tr><td>σ'v en medio del bulbo</td><td>250 kPa</td></tr>
+<tr><td>φ' de la grava</td><td>38°</td></tr>
+<tr><td>τult FHWA para grava</td><td>350 kPa (rango medio)</td></tr>
+<tr><td>Diámetro perforación nominal</td><td>0,12 m</td></tr>
+<tr><td>D efectivo (con penetración)</td><td>0,15 m</td></tr>
+<tr><td>FS (permanente, NCh 3171)</td><td>2,5</td></tr>
+<tr><td>Cables a usar</td><td>4 torones φ 15,2 mm (A total = 560 mm²)</td></tr>
+</tbody>
+</table>
+<p>Longitud del bulbo por FHWA simplificado: Lbulbo = FS·T / (π·D·τult) = 2,5·400 / (π·0,15·350) = 1.000 / 164,9 = 6,07 m. Adoptamos Lbulbo = 6,5 m (redondeo constructivo). Capacidad última: Tult = π·D·L·τult = π·0,15·6,5·350 = 1.071 kN. Capacidad admisible: Tadm = Tult/FS = 1.071/2,5 = 428 kN &gt; 400 kN requerido ✓. Verificación acero: Tadm,acero = 0,6·1.860·560 = 624.960 N = 625 kN &gt; 400 kN ✓. Con 4 torones hay holgura para sobretensión de 50 % (cebado inicial), que es práctica estándar. Longitud tramo libre: en muro de 12 m con anclaje a 3 m de cabeza, superficie de falla activa pasa a 45° + φ/2 = 64° desde pie = 9 m desde cabeza. Lfree min = 9 + 1,5 = 10,5 m. Longitud total anclaje = Lfree + Lbulbo = 10,5 + 6,5 = 17 m. Ensayo de integridad: cada anclaje debe probarse a 1,25·T = 500 kN y verificar que la elongación sea consistente con el tramo libre real.</p>
+<p class="resultado"><strong>Resultado:</strong> Lbulbo = 6,5 m · Tult = 1.071 kN · Tadm = 428 kN · Longitud total 17 m · 4 torones</p>
+
+<h2>Interpretación de resultados</h2>
+<p>El diseño es eficiente: el bulbo transfiere 400 kN con 6,5 m en grava compacta a profundidad donde σ'v es razonable. Si el terreno fuera arena media (τult = 180 kPa), la longitud requerida subiría a ~12 m (casi doblar). En arcillas blandas (τult &lt; 50 kPa) los anclajes dejan de ser viables y se pasa a tirantes pasivos (dead man) o pilotes de tracción. El espaciamiento horizontal entre anclajes es crítico: si son &lt; 1,5 m el efecto grupo reduce la capacidad individual por superposición de campos de tensión (se evalúa con factor de eficiencia η similar a pilotes). Espaciamiento recomendado: 2,5-3 m centro a centro.</p>
+
+<h2>Normativas de referencia</h2>
+<ul>
+<li>NCh 3171.Of2017 — Fundaciones, sección sobre anclajes postensados</li>
+<li>FHWA-IF-99-015 — Ground anchors and anchored systems (guía estándar)</li>
+<li>PTI DC35.1 (2014) — Recommendations for prestressed rock and soil anchors</li>
+<li>Littlejohn, G.S. &amp; Bruce, D.A. (1976). Rock anchors — state-of-the-art</li>
+<li>Hoek, E. (1983). Strength of jointed rock masses, rock anchorage</li>
+<li>Eurocode 7 (EN 1997-1) — Anchorages, sección específica</li>
+<li>BS 8081 — Code of practice for ground anchorages</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Anclaje permanente o provisorio?</summary><p>Permanente: vida útil &gt; 2 años, protección doble (vaina + inyección corrugada), acero galvanizado o con protección anódica, FS = 2,5. Provisorio: vida útil &lt; 2 años (ej. excavación), protección simple, FS = 1,5. Transiciones provisionales que quedan en servicio &gt; 2 años deben reforzarse con inyección adicional para convertirlos en permanentes.</p></details>
+<details><summary>¿Barras o cables?</summary><p>Barras (GEWI, Dywidag): mejores para longitudes cortas (&lt; 15 m), permiten acoples mecánicos, fáciles de inspeccionar, diámetros 25-50 mm, límite práctico 1.000 kN por barra. Cables de torones: mejores para longitudes largas (&gt; 15 m), capacidades muy altas (hasta 5.000 kN con 22 torones), protección más compleja pero estándar en obras grandes. La elección depende del tamaño del anclaje y del acceso en obra.</p></details>
+<details><summary>¿Cómo se prueban los anclajes?</summary><p>Test proof (todos los anclajes): tensar a 1,25·T y verificar elongación = esperada ± 15 % y pérdida por relajación en 15 min &lt; 5 %. Test performance (5-10 % de los anclajes): tensar hasta 1,5·T en ciclos con mediciones de alargamiento y pérdida. Test de extracción (1-2 de sacrificio): tensar hasta falla para verificar Tult real. Resultados se comparan con el modelo de diseño y se ajusta la longitud si hay divergencias.</p></details>
+<details><summary>¿Cuándo necesito post-inyección?</summary><p>Post-inyección es una segunda inyección de lechada en el bulbo a presión después de que la primera fragüe, usando una manguera con válvula de retención. Aumenta D efectivo y σ'radial alrededor del bulbo, incrementando Tult 40-100 %. Se usa en suelos difíciles: arenas finas flojas, limos saturados, arcillas con alta plasticidad, y cuando se requiere capacidad alta en longitudes limitadas.</p></details>
+
+<h2>Calculadoras relacionadas</h2>
+<ul>
+<li><a href="/herramientas-geotecnicas/empujes-muros/">Muros pantalla anclados</a></li>
+<li><a href="/herramientas-geotecnicas/empujes-muros/">Verificación muro FS vuelco y deslizamiento</a></li>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-pilotes.html">Capacidad pilotes axial</a></li>
+<li><a href="/herramientas-geotecnicas/empujes-muros/">Empujes Rankine Ka, Kp</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "SoftwareApplication", "name": "Calculadora Anclajes al Terreno", "applicationCategory": "EngineeringApplication", "operatingSystem": "Web", "description": "Capacidad pullout, longitud bulbo y tramo libre para anclajes activos según FHWA y PTI. Calculadora gratuita de Mecánica de Suelos.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CLP"}},
+    {"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "Permanente o provisorio", "acceptedAnswer": {"@type": "Answer", "text": "Permanente: vida>2 años, doble protección, FS=2,5. Provisorio: <2 años, simple, FS=1,5."}},
+      {"@type": "Question", "name": "Barras o cables", "acceptedAnswer": {"@type": "Answer", "text": "Barras: cortas, acoples mecánicos, hasta 1.000 kN. Cables: largos, hasta 5.000 kN."}},
+      {"@type": "Question", "name": "Pruebas de anclajes", "acceptedAnswer": {"@type": "Answer", "text": "Test proof 1,25·T a todos; performance 1,5·T a 5-10%; extracción a 2 de sacrificio."}},
+      {"@type": "Question", "name": "Post-inyección", "acceptedAnswer": {"@type": "Answer", "text": "Segunda inyección aumenta Tult 40-100%. Para arenas finas, limos saturados, arcillas plásticas."}}
+    ]},
+    {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Herramientas geotécnicas", "item": "https://ingeotecnia.net/herramientas-geotecnicas"},
+        {"@type": "ListItem", "position": 3, "name": "Empujes y muros", "item": "https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros"},
+        {"@type": "ListItem", "position": 4, "name": "Anclajes al terreno", "item": "https://ingeotecnia.net/herramientas-geotecnicas/empujes-muros/anclajes-terreno"}
+      ]}
+  ]
+}
+</script>
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Empujes y Muros de Contención</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+      <li><a href="/herramientas-geotecnicas/empujes-muros/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Empujes de Tierra — Teoría de Coulomb</a></li>
+      <li><a href="/herramientas-geotecnicas/empujes-muros/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Empujes de Tierra — Teoría de Rankine</a></li>
+      <li><a href="/herramientas-geotecnicas/empujes-muros/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Empuje Sísmico Mononobe-Okabe</a></li>
+      <li><a href="/herramientas-geotecnicas/empujes-muros/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Muros Pantalla — empotramiento, fuerza ancla, momento</a></li>
+  </ul>
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+    Más herramientas en <a href="/herramientas-geotecnicas/empujes-muros" style="color:#0d9488">Empujes y Muros de Contención</a> · Volver al
+    <a href="/herramientas-geotecnicas" style="color:#0d9488">índice de Mecánica de Suelos</a>
+  </p>
+</aside>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>

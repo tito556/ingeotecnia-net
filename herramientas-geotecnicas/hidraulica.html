@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Hidráulica de suelos · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/hidraulica">
+<meta property="og:title" content="Hidráulica de suelos · IngeoTecnia">
+<meta property="og:description" content="Cinco calculadoras de flujo en suelos: permeabilidad Hazen, Lefranc in situ, infiltración Porchet, gradiente hidráulico crítico y tubificación Lane 1935.">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hidráulica de suelos · IngeoTecnia">
+<meta name="twitter:description" content="Cinco calculadoras de flujo en suelos: permeabilidad Hazen, Lefranc in situ, infiltración Porchet, gradiente hidráulico crítico y tubificación Lane 1935...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Hidráulica de suelos — permeabilidad e infiltración · 5 calculadoras",
+      "applicationCategory": "EngineeringApplication",
+      "applicationSubCategory": "Geotechnical Engineering Calculator",
+      "operatingSystem": "Web",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica",
+      "description": "Cinco calculadoras de flujo en suelos: permeabilidad Hazen, Lefranc in situ, infiltración Porchet, gradiente hidráulico crítico y tubificación Lane 1935. Calculadora gratuita de Mecánica de Suelos.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IngeoTecnia · Estudios Geotécnicos Chile",
+        "url": "https://ingeotecnia.net/"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica",
+      "name": "Hidráulica de suelos — permeabilidad e infiltración · 5 calculadoras",
+      "description": "Cinco calculadoras de flujo en suelos: permeabilidad Hazen, Lefranc in situ, infiltración Porchet, gradiente hidráulico crítico y tubificación Lane 1935. Calculadora gratuita de Mecánica de Suelos.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://ingeotecnia.net/",
+        "name": "IngeoTecnia · Estudios Geotécnicos Chile"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ingeotecnia.net/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Herramientas geotécnicas",
+          "item": "https://ingeotecnia.net/herramientas-geotecnicas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hidráulica de suelos — permeabilidad e infiltración · 5 calculadoras"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<meta name="description" content="Cinco calculadoras de flujo en suelos: permeabilidad Hazen, Lefranc in situ, infiltración Porchet, gradiente hidráulico crítico y tubificación Lane...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/hidraulica">
+
+<style>
+.calc-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.9rem;margin:1.2rem 0 2rem}
+.calc-card{display:block;padding:1rem 1.1rem;background:#fff;border:1px solid #e2e8f0;border-radius:9px;text-decoration:none;color:inherit;transition:all .15s}
+.calc-card:hover{border-color:#0d9488;box-shadow:0 3px 10px rgba(13,148,136,.08);transform:translateY(-1px);text-decoration:none}
+.calc-card h3{margin:0 0 .3rem;font-size:.98rem;font-weight:700;color:#1e3a5f;line-height:1.3}
+.calc-card p{margin:0;font-size:.83rem;color:#64748b;line-height:1.45}
+.other-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.5rem;margin:1rem 0 1rem;list-style:none;padding:0}
+.other-cats li{margin:0}
+.other-cats a{display:block;padding:.55rem .8rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:.88rem;font-weight:500;color:#1e3a5f;text-decoration:none;transition:all .15s}
+.other-cats a:hover{background:#f0fdfa;border-color:#0d9488;color:#0d9488;text-decoration:none}
+</style>
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/CollectionPage">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <span>Hidráulica de suelos</span>
+</nav>
+
+<h1>Hidráulica de suelos — permeabilidad e infiltración</h1>
+
+<p class="lead">Cinco herramientas para <strong>análisis de flujo de agua en suelos</strong>: estimación de la permeabilidad k por Hazen (correlación con D10), ensayo de campo Lefranc, infiltración Porchet para diseño de sistemas de drenaje, gradiente hidráulico crítico para verificar erosión interna y método de Lane 1935 para evaluar el potencial de tubificación bajo presas y muros. Siguen NCh 853, ASTM D2434/D6391, USBR y manuales CIRIA.</p>
+
+<h2>Calculadoras de esta categoría</h2>
+<div class="calc-list">
+  <a class="calc-card" href="/herramientas-geotecnicas/hidraulica.html">
+    <h3>Permeabilidad Hazen</h3>
+    <p>k ≈ C·D10² para arenas uniformes limpias, C = 0,4 a 1,2 cm⁻¹·s⁻¹.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/hidraulica.html">
+    <h3>Permeabilidad Lefranc in situ</h3>
+    <p>Ensayo de carga constante o variable en pozos para k a escala de terreno.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/hidraulica.html">
+    <h3>Infiltración Porchet</h3>
+    <p>Capacidad de infiltración f para diseño de pozos absorbentes y drenes franceses.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/hidraulica.html">
+    <h3>Gradiente hidráulico crítico</h3>
+    <p>ic = γ'/γw para control de sifonamiento en excavaciones bajo NF.</p>
+  </a>
+  <a class="calc-card" href="/herramientas-geotecnicas/hidraulica.html">
+    <h3>Tubificación Lane 1935</h3>
+    <p>Camino de filtración ponderado y coeficiente de Lane bajo presas y muros.</p>
+  </a>
+</div>
+
+<h2>Dónde se aplica cada una</h2>
+<p>En proyectos con napa freática, excavaciones bajo el nivel de agua o presas de tierra, la hidráulica del suelo es determinante. Hazen entrega una estimación rápida de k desde la granulometría. Lefranc lo mide directamente en terreno. Porchet sirve para dimensionar pozos de absorción de aguas lluvia. El gradiente crítico y el método de Lane se usan en seguridad frente a erosión interna y tubificación, típicamente en diseño de tablestacas, presas y tapones de fondo.</p>
+
+<h2>Otras categorías</h2>
+<ul class="other-cats">
+  <li><a href="/herramientas-geotecnicas/clasificacion-suelos">Clasificación de suelos</a></li>
+  <li><a href="/herramientas-geotecnicas/">Relaciones y compactación</a></li>
+  <li><a href="/herramientas-geotecnicas/capacidad-portante">Capacidad portante y fundaciones</a></li>
+  <li><a href="/herramientas-geotecnicas/empujes-muros">Empujes y muros</a></li>
+  <li><a href="/herramientas-geotecnicas/">Pavimentos</a></li>
+  <li><a href="/herramientas-geotecnicas/sismico.html">Análisis sísmico</a></li>
+  <li><a href="/herramientas-geotecnicas/taludes-roca.html">Taludes y roca</a></li>
+  <li><a href="/herramientas-geotecnicas/ensayos">Ensayos in situ y laboratorio</a></li>
+  <li><a href="/herramientas-geotecnicas">Zona sísmica por país (ver home)</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Hidráulica de suelos — permeabilidad e infiltración",
+  "description": "Cinco calculadoras de flujo en suelos: Hazen, Lefranc, Porchet, gradiente crítico y Lane. Calculadora gratuita de Mecánica de Suelos.",
+  "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica",
+  "inLanguage": "es",
+  "hasPart": [
+    {"@type": "SoftwareApplication", "name": "Permeabilidad Hazen", "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica/permeabilidad-hazen"},
+    {"@type": "SoftwareApplication", "name": "Permeabilidad Lefranc", "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica/permeabilidad-lefranc"},
+    {"@type": "SoftwareApplication", "name": "Infiltración Porchet", "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica/infiltracion-porchet"},
+    {"@type": "SoftwareApplication", "name": "Gradiente hidráulico crítico", "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica/gradiente-hidraulico-critico"},
+    {"@type": "SoftwareApplication", "name": "Tubificación Lane", "url": "https://ingeotecnia.net/herramientas-geotecnicas/hidraulica/tubificacion-lane"}
+  ]
+}
+</script>
+
+</article>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>

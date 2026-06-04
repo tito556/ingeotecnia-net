@@ -1,0 +1,21 @@
+# IngeoTecnia
+
+> Estudio geotécnico profesional en Chile. Laboratorio de mecánica de suelos, sondajes SPT y estabilidad de taludes con cobertura nacional.
+
+Geotechnical engineering — ingeotecnia.net.
+
+## Pages
+
+- [Sondajes SPT](https://ingeotecnia.net/sondajes-spt/)
+- [Laboratorio de Mecanica de Suelos](https://ingeotecnia.net/laboratorio-mecanica-suelos/)
+- [Estabilidad de Taludes](https://ingeotecnia.net/estabilidad-taludes/)
+- [Diseno de Muros de Contencion](https://ingeotecnia.net/diseno-muros-contencion/)
+- [Santiago](https://ingeotecnia.net/estudio-geotecnico-en-santiago/)
+- [Antofagasta](https://ingeotecnia.net/estudio-geotecnico-en-antofagasta/)
+- [Concepción](https://ingeotecnia.net/estudio-geotecnico-en-concepcion/)
+- [Valparaíso](https://ingeotecnia.net/estudio-geotecnico-en-valparaiso/)
+- [Iquique](https://ingeotecnia.net/estudio-geotecnico-en-iquique/)
+- [Equipo](https://ingeotecnia.net/equipo/juan-carlos-vargas/)
+
+## Contact
+Email: contacto@ingeotecnia.net?subject=Solicitud%20de%20cotización%20%E2%80%94%20Chile

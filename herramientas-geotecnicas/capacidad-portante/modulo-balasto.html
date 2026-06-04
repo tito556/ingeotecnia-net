@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Módulo Balasto k · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto">
+<meta property="og:title" content="Módulo Balasto k · IngeoTecnia">
+<meta property="og:description" content="Módulo de balasto ks1 y ks para losas, radier y fundaciones sobre resorte de Winkler. Ensayo de placa de carga NCh 1508 y correlaciones con CBR, E y SPT.">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Módulo Balasto k · IngeoTecnia">
+<meta name="twitter:description" content="Módulo de balasto ks1 y ks para losas, radier y fundaciones sobre resorte de Winkler. Ensayo de placa de carga NCh 1508 y correlaciones con CBR, E y SPT...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<meta name="description" content="Módulo de balasto ks1 y ks para losas, radier y fundaciones sobre resorte de Winkler. Ensayo de placa de carga NCh 1508 y correlaciones con CBR, E y...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto">
+
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+
+<!-- AUTO-HOWTO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar la calculadora Geotechnical Engineering",
+  "description": "Pasos para usar esta calculadora gratuita de Mecánica de Suelos en la categoría Capacidad Portante.",
+  "totalTime": "PT2M",
+  "inLanguage": "es",
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Calculadora de Mecánica de Suelos"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Ingresa los datos del suelo",
+      "text": "Completa los parámetros requeridos según el tipo de cálculo (Capacidad Portante). Los campos están etiquetados con sus unidades estándar.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto#input"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Selecciona la normativa de tu país",
+      "text": "Elige el código aplicable (NCh, ASTM, AASHTO, Eurocode 7/8, FHWA u otros). La calculadora ajusta los coeficientes y factores de seguridad automáticamente.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto#norma"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Lee el resultado y descárgalo",
+      "text": "El resultado aparece con la fórmula desarrollada paso a paso. Puedes copiar los valores o exportar a Excel para anexar a tu informe geotécnico.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto#resultado"
+    }
+  ]
+}
+</script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/SoftwareApplication">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <a href="/herramientas-geotecnicas/capacidad-portante">Capacidad portante y fundaciones</a> › <span>Módulo de balasto</span>
+</nav>
+
+<h1>Calculadora Módulo de Balasto k — Winkler, placa de carga y correlaciones</h1>
+
+<p class="lead">El módulo de balasto k (o coeficiente de reacción del suelo) es el parámetro que caracteriza al suelo como un "resorte" en el modelo de Winkler, usado para diseñar losas, radieres, pavimentos rígidos y fundaciones sobre terreno elástico. Esta calculadora entrega k a partir del ensayo de placa de carga (NCh 1508), de correlaciones con CBR (Terzaghi 1955) y de la conversión ks1 → ks(B) por efecto de escala según Terzaghi-Peck. Imprescindible en diseño de estructuras industriales con losa de fundación, torres de transmisión, pavimentos aeroportuarios y fundaciones de máquinas con carga cíclica.</p>
+
+<h2>¿Qué es y cuándo se aplica?</h2>
+<p>El modelo de Winkler 1867 idealiza al suelo como un conjunto de resortes independientes con rigidez k (fuerza por unidad de desplazamiento y de área, kN/m³). Es una simplificación útil para cálculos rápidos de esfuerzos en losas y pavimentos cuando la interacción entre puntos del suelo es secundaria (suelos granulares densos y sitios relativamente uniformes). Para fundaciones sobre arcillas blandas o suelos estratificados el modelo pierde precisión; se reemplaza por modelos continuos (Boussinesq, Mindlin) o por elementos finitos con suelo como continuo elástico. El valor k se mide directamente con el ensayo de placa de carga circular de 760 mm, que entrega k₁ (módulo para placa 1 ft = 300 mm).</p>
+
+<h2>Fórmulas aplicadas</h2>
+<div class="formulas">
+<p><strong>Módulo de balasto desde ensayo de placa (NCh 1508):</strong></p>
+<p>k₁ = σ (a asentamiento 0,05 pulg = 1,25 mm) / 0,00125 m [kN/m³]</p>
+<p><strong>Corrección por tamaño de la fundación real B ≠ 0,30 m:</strong></p>
+<p>Arenas: ks(B) = k₁ · ((B + 0,30) / (2·B))² (Terzaghi 1955)</p>
+<p>Arcillas: ks(B) = k₁ · (0,30 / B)</p>
+<p>donde B está en metros y k₁ es el valor de la placa de 0,30 m</p>
+<p><strong>Correlación con módulo elástico E:</strong></p>
+<p>ks ≈ E / (B · (1 − ν²)) para fundación flexible promedio (Vesic 1961)</p>
+<p><strong>Correlación con CBR (Ullidtz 1987 / PCA):</strong></p>
+<p>ks(MPa/m) ≈ 10 · CBR^0,66 (CBR de la subrasante, para pavimentos rígidos)</p>
+<p><strong>Correlación con N_SPT (arenas, Scott 1981):</strong></p>
+<p>ks ≈ 1,8·N_SPT MPa/m (en subgrado con B pequeño) — útil sólo como estimación preliminar</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Calculadora interactiva de módulo de balasto">
+<h2>Calcular en línea</h2>
+<p class="calc-intro">Ingresa los datos y obtén ks(B) corregido por tamaño para usar en software de losas.</p>
+<form id="calc-form" novalidate>
+<div class="calc-row">
+<label>k₁ placa 300 mm (MPa/m)<input type="number" id="k1" step="1" value="200" min="1" max="1000" required></label>
+<label>Ancho real B (m)<input type="number" id="B" step="0.1" value="6.0" min="0.3" max="50" required></label>
+<label>Tipo de suelo<select id="tipo"><option value="arena">Arena / grava (Terzaghi)</option><option value="arcilla">Arcilla (lineal)</option></select></label>
+</div>
+<button type="submit">Calcular ks(B)</button>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note">Valores de referencia (B = 1 m): arcillas blandas 5-15 · arenas densas 50-100 · gravas compactas 80-150 MPa/m. Verificar con ensayo in situ si el proyecto es crítico.</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicable">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<script src="/widgets/visor-normas.js" data-slug="modulo-balasto"></script>
+<script>
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Cerrar marco normativo':'📖 Ver marco normativo';});})();
+</script>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+</style>
+<script>
+(function(){
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var k1=parseFloat(document.getElementById('k1').value);
+var B=parseFloat(document.getElementById('B').value);
+var tipo=document.getElementById('tipo').value;
+var out=document.getElementById('calc-resultado');
+if(!isFinite(k1)||!isFinite(B)||k1<=0||B<=0){out.innerHTML='<span class="err">Ingresa valores numéricos positivos.</span>';return;}
+var ks,formula;
+if(tipo==='arena'){ks=k1*Math.pow((B+0.30)/(2*B),2);formula='ks = k₁·((B+0,30)/(2B))²';}
+else{ks=k1*(0.30/B);formula='ks = k₁·(0,30/B)';}
+var factor=(ks/k1*100).toFixed(1);
+out.innerHTML='<span class="ok">ks(B='+B.toFixed(2)+' m) = '+ks.toFixed(1)+' MPa/m</span>'+
+'Equivalente: '+(ks*1000).toFixed(0)+' kN/m³<br>'+
+'Factor de reducción por tamaño: '+factor+' % de k₁<br>'+
+'<span style="color:#64748b;font-size:.85em">Fórmula aplicada: '+formula+'</span>';
+});
+})();
+</script>
+
+<h2>Ejemplo de cálculo</h2>
+<table class="ejemplo">
+<caption>Radier industrial sobre grava compactada — Planta logística zona industrial</caption>
+<thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Ensayo placa 300 mm a 6 m profundidad</td><td>σ = 250 kPa @ δ = 1,25 mm</td></tr>
+<tr><td>k₁ calculado desde ensayo</td><td>250 / 0,00125 = 200.000 kN/m³ = 200 MPa/m</td></tr>
+<tr><td>Ancho del radier real B</td><td>6,0 m (sección efectiva equivalente)</td></tr>
+<tr><td>Tipo de suelo</td><td>Arena gruesa compactada, γ = 20 kN/m³</td></tr>
+<tr><td>CBR medido (subrasante)</td><td>25 % (arena bien compactada)</td></tr>
+<tr><td>Módulo elástico E (correlación)</td><td>80 MPa</td></tr>
+</tbody>
+</table>
+<p>Conversión por tamaño (fórmula Terzaghi arena): ks(B = 6 m) = 200 · ((6 + 0,30) / (2·6))² = 200 · (6,30/12)² = 200 · 0,525² = 200 · 0,276 = 55,2 MPa/m = 55.200 kN/m³. El valor cae 3,6 veces al pasar de placa pequeña a radier grande — razón por la que no se puede usar k₁ directamente. Verificación por Vesic: ks(Vesic) ≈ E / (B·(1 − ν²)) = 80.000 / (6 · (1 − 0,3²)) = 80.000 / (6 · 0,91) = 14.652 kN/m³ = 14,7 MPa/m. Verificación por CBR (Ullidtz): ks ≈ 10·25^0,66 = 10·8,41 = 84,1 MPa/m. Los tres métodos dan órdenes de magnitud comparables pero dispersión 3× típica. Valor de diseño: tomar el menor conservador o promediar → 55 MPa/m es razonable para radier de grava bien compactada. Verificar con prueba de carga in situ si el proyecto es crítico (silos, naves con cargas dinámicas).</p>
+<p class="resultado"><strong>Resultado:</strong> k₁ = 200 MPa/m (placa) · ks(B=6m) = 55 MPa/m · Usar 55 MPa/m en software de losas</p>
+
+<h2>Interpretación de resultados</h2>
+<p>El valor k controla los esfuerzos en la losa: un k alto concentra los esfuerzos cerca de las cargas (momentos altos en soportes, cortante en perímetros); un k bajo distribuye la carga en un área más amplia (momentos suaves, mayor deflexión). Valores típicos de ks (B=1 m): arcillas blandas 5-15 MPa/m; arcillas firmes 20-50; arenas sueltas 15-30; arenas densas 50-100; gravas compactadas 80-150. Para diseño de losas sobre suelos heterogéneos se recomienda calcular con ks mínimo y máximo esperados y tomar la envolvente de esfuerzos, ya que k no es lineal ni único en la práctica.</p>
+
+<h2>Normativas de referencia</h2>
+<ul>
+<li>NCh 1508.Of2008 — Ensayo de placa de carga estática para determinación de k</li>
+<li>NCh 3171.Of2017 — Fundaciones, cita módulo de balasto como parámetro aceptado</li>
+<li>PCA (1984) Thickness design for concrete highway and street pavements — tablas k desde CBR</li>
+<li>Terzaghi, K. (1955). Evaluation of coefficients of subgrade reaction</li>
+<li>Vesic, A.S. (1961). Beams on elastic subgrade and the Winkler's hypothesis</li>
+<li>ASTM D1196 — Standard test method for nonrepetitive static plate load tests of soils</li>
+<li>Manual de Carreteras MOP Vol. N°3 — Ensayo de placa y correlación con CBR</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Por qué ks(B) depende del tamaño?</summary><p>Porque la profundidad de influencia de una fundación es proporcional a su ancho B. Una placa pequeña (0,30 m) comprime un bulbo de suelo hasta ~0,60 m; una losa grande (6 m) comprime hasta 12 m e integra más estratos. Si los estratos profundos son más blandos, ks(B) baja; si son más rígidos, ks(B) puede aumentar. La fórmula de Terzaghi asume perfil relativamente uniforme.</p></details>
+<details><summary>¿Cuándo no usar Winkler?</summary><p>Arcillas blandas uniformes, fundaciones muy rígidas, losas con cargas muy concentradas, o sitios con estratos variables en profundidad. Alternativas: modelo Pasternak (dos parámetros: k y Gp de acoplamiento entre resortes), modelo de capa elástica Boussinesq, o elementos finitos 3D con suelo como continuo (PLAXIS, SAP2000 con mallado). En edificios altos con fundación tipo losa-pilote se usa siempre modelado FEM.</p></details>
+<details><summary>¿Cómo uso k en software de losas?</summary><p>En SAP2000, ETABS, ANSYS el k se introduce como area spring stiffness (kN/m³ en bandera de área). En SAFE se asigna como "soil k" directamente a cada panel de losa. Cuidado: algunos programas requieren que k se convierta a unidades de fuerza por área (kN/m²) multiplicando por el tamaño del elemento finito, otros lo toman directo. Verificar siempre con ejemplo simple de losa uniformemente cargada (flecha esperada = q/k).</p></details>
+<details><summary>¿Es k diferente para cargas estáticas y dinámicas?</summary><p>Sí. Bajo carga dinámica (máquinas, vibración, sismo), el suelo responde más rígido (k aumenta 20-50 %). Se usa el módulo dinámico Ed desde ensayos geofísicos (MASW, cross-hole) que entrega Vs, luego Ed = 2·ρ·Vs²·(1+ν). Para diseño anti-vibratorio se usa k dinámico y se verifican amplitudes según Richart-Hall 1970 para fundaciones de máquinas.</p></details>
+
+<h2>Calculadoras relacionadas</h2>
+<ul>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic.html">Capacidad portante Terzaghi/Vesic</a></li>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/">Asentamiento Schmertmann</a></li>
+<li><a href="/herramientas-geotecnicas/">CBR desde DCP/DPI</a></li>
+<li><a href="/herramientas-geotecnicas/">Módulo resiliente MR desde CBR</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "SoftwareApplication", "name": "Calculadora Módulo Balasto k", "applicationCategory": "EngineeringApplication", "operatingSystem": "Web", "description": "ks1 y ks(B) desde placa de carga NCh 1508, E y CBR para modelo de Winkler. Calculadora gratuita de Mecánica de Suelos.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CLP"}},
+    {"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "Por qué ks(B) depende del tamaño", "acceptedAnswer": {"@type": "Answer", "text": "La profundidad de bulbo depende de B. Placas pequeñas sienten menos estratos profundos."}},
+      {"@type": "Question", "name": "Cuándo no usar Winkler", "acceptedAnswer": {"@type": "Answer", "text": "Arcillas blandas uniformes y estratos variables. Alternativas: Pasternak, Boussinesq, FEM 3D."}},
+      {"@type": "Question", "name": "k en software", "acceptedAnswer": {"@type": "Answer", "text": "Area spring stiffness en kN/m³. Verificar con losa uniforme: flecha = q/k."}},
+      {"@type": "Question", "name": "k estático vs dinámico", "acceptedAnswer": {"@type": "Answer", "text": "Dinámico 20-50% mayor. Ed desde Vs (MASW). Diseño antivibratorio por Richart-Hall 1970."}}
+    ]},
+    {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Herramientas geotécnicas", "item": "https://ingeotecnia.net/herramientas-geotecnicas"},
+        {"@type": "ListItem", "position": 3, "name": "Capacidad portante y fundaciones", "item": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante"},
+        {"@type": "ListItem", "position": 4, "name": "Módulo de balasto", "item": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/modulo-balasto"}
+      ]}
+  ]
+}
+</script>
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Capacidad Portante</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Asentamiento Elástico — Schmertmann</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-pilotes.html" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Capacidad Axial de Pilotes — punta, fricción y admisible</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic.html" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Capacidad Portante Terzaghi y Vesic</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Consolidación 1D — Terzaghi</a></li>
+  </ul>
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+    Más herramientas en <a href="/herramientas-geotecnicas/capacidad-portante" style="color:#0d9488">Capacidad Portante</a> · Volver al
+    <a href="/herramientas-geotecnicas" style="color:#0d9488">índice de Mecánica de Suelos</a>
+  </p>
+</aside>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>

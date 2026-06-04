@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Capacidad Portante Terzaghi / Vesic para Zapatas · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic">
+<meta property="og:title" content="Capacidad Portante Terzaghi / Vesic para Zapatas · IngeoTecnia">
+<meta property="og:description" content="Obtén qu y qadm de zapatas superficiales con Terzaghi y Vesic. Factores Nc, Nq, Nγ, forma, profundidad e inclinación según NCh 3171 y Meyerhof/Vesic.">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Capacidad Portante Terzaghi / Vesic para Zapatas · IngeoTecnia">
+<meta name="twitter:description" content="Obtén qu y qadm de zapatas superficiales con Terzaghi y Vesic. Factores Nc, Nq, Nγ, forma, profundidad e inclinación según NCh 3171 y Meyerhof/Vesic...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<meta name="description" content="Obtén qu y qadm de zapatas superficiales con Terzaghi y Vesic. Factores Nc, Nq, Nγ, forma, profundidad e inclinación según NCh 3171 y Meyerhof/Vesic...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic">
+
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+
+<!-- AUTO-HOWTO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar la calculadora Geotechnical Engineering",
+  "description": "Pasos para usar esta calculadora gratuita de Mecánica de Suelos en la categoría Capacidad Portante.",
+  "totalTime": "PT2M",
+  "inLanguage": "es",
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Calculadora de Mecánica de Suelos"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Ingresa los datos del suelo",
+      "text": "Completa los parámetros requeridos según el tipo de cálculo (Capacidad Portante). Los campos están etiquetados con sus unidades estándar.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic#input"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Selecciona la normativa de tu país",
+      "text": "Elige el código aplicable (NCh, ASTM, AASHTO, Eurocode 7/8, FHWA u otros). La calculadora ajusta los coeficientes y factores de seguridad automáticamente.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic#norma"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Lee el resultado y descárgalo",
+      "text": "El resultado aparece con la fórmula desarrollada paso a paso. Puedes copiar los valores o exportar a Excel para anexar a tu informe geotécnico.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic#resultado"
+    }
+  ]
+}
+</script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/SoftwareApplication">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <a href="/herramientas-geotecnicas/capacidad-portante">Capacidad portante y fundaciones</a> › <span>Capacidad portante Terzaghi/Vesic</span>
+</nav>
+
+<h1>Calculadora Capacidad Portante Terzaghi y Vesic</h1>
+
+<p class="lead">La capacidad portante última qu y admisible qadm definen la presión que una zapata puede transmitir al suelo sin fallar por corte ni producir asentamientos excesivos. Esta calculadora aplica la fórmula general de Terzaghi (1943) con extensiones de Vesic (1973) y Meyerhof, incorporando factores de forma, profundidad e inclinación de carga. Compatible con los criterios de diseño de NCh 3171 y la práctica habitual en edificación.</p>
+
+<h2>¿Qué es y cuándo se aplica?</h2>
+<p>La capacidad portante se aplica a zapatas superficiales (aisladas, corridas, combinadas) y, con adaptaciones, a losas de fundación. Define la carga máxima por unidad de área antes de la falla por corte generalizada del suelo. En la práctica se divide qu por un factor de seguridad (típicamente 3,0 estático y 2,0 sísmico según NCh 3171) para obtener qadm. El cálculo es sensible a c, φ, γ, profundidad de empotramiento, geometría y presencia de napa freática.</p>
+
+<h2>Fórmulas aplicadas</h2>
+<div class="formulas">
+<p><strong>Terzaghi (zapata corrida, suelo ideal):</strong></p>
+<p>qu = c·Nc + q·Nq + 0,5·γ·B·Nγ</p>
+<p><strong>Vesic generalizada:</strong> qu = c·Nc·sc·dc·ic + q·Nq·sq·dq·iq + 0,5·γ·B·Nγ·sγ·dγ·iγ</p>
+<p><strong>Factores de capacidad (Vesic):</strong></p>
+<p>Nq = e^(π·tan φ) · tan²(45 + φ/2)</p>
+<p>Nc = (Nq − 1) / tan φ  (o 5,14 si φ = 0)</p>
+<p>Nγ = 2 · (Nq + 1) · tan φ</p>
+<p><strong>Factores de forma (Vesic):</strong> sc = 1 + (B/L)(Nq/Nc), sq = 1 + (B/L) tan φ, sγ = 1 − 0,4 (B/L)</p>
+<p><strong>Factores de profundidad:</strong> dq = 1 + 2 tan φ (1 − sin φ)² · (Df/B); dc = dq − (1 − dq)/(Nc tan φ); dγ = 1.</p>
+<p><strong>Capacidad admisible:</strong> qadm = (qu − γ·Df) / FS + γ·Df (carga neta admisible)</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Calculadora interactiva de capacidad portante Terzaghi/Vesic">
+<h2>Calcular en línea</h2>
+<p class="calc-intro">Ingresa geometría y parámetros del suelo para obtener qult y qadm. <strong>El factor de seguridad se ajusta automáticamente</strong> según la norma del país que selecciones a la derecha.</p>
+<form id="calc-form" novalidate>
+
+<div class="calc-section">
+  <h3 class="calc-section-title">Geometría de la fundación</h3>
+  <div class="calc-row">
+    <label>B — Ancho <span class="calc-unit">(m)</span><input type="number" id="B" step="0.1" value="2.0" min="0.1" max="20" required></label>
+    <label>L — Largo <span class="calc-unit">(m)</span><input type="number" id="L" step="0.1" value="2.0" min="0.1" max="50" required>
+      <span class="calc-hint">Corrida o cuadrada: usar B = L</span></label>
+    <label>D<sub>f</sub> — Profundidad <span class="calc-unit">(m)</span><input type="number" id="Df" step="0.1" value="1.5" min="0" max="20" required></label>
+    <label>Tipo de zapata<select id="tipo">
+      <option value="corrida">Corrida (L ≫ B)</option>
+      <option value="cuadrada" selected>Cuadrada (B = L)</option>
+      <option value="rectangular">Rectangular (B / L)</option>
+      <option value="circular">Circular (B = Ø)</option>
+    </select></label>
+  </div>
+</div>
+
+<div class="calc-section">
+  <h3 class="calc-section-title">Suelo y nivel freático</h3>
+  <div class="calc-row">
+    <label>γ — Peso unitario <span class="calc-unit">(kN/m³)</span><input type="number" id="gamma" step="0.5" value="18" min="10" max="25" required></label>
+    <label>γ<sub>sat</sub> — Saturado <span class="calc-unit">(kN/m³)</span><input type="number" id="gsat" step="0.5" value="19" min="10" max="26">
+      <span class="calc-hint">Default = γ + 1</span></label>
+    <label>D<sub>w</sub> — Nivel freático <span class="calc-unit">(m)</span><input type="number" id="Dw" step="0.1" value="" min="0" max="30" placeholder="vacío = sin napa">
+      <span class="calc-hint">Desde superficie. Vacío si no hay napa</span></label>
+  </div>
+</div>
+
+<div class="calc-section">
+  <h3 class="calc-section-title">Resistencia al corte</h3>
+  <div class="calc-row">
+    <label>c — Cohesión <span class="calc-unit">(kPa)</span><input type="number" id="c" step="1" value="10" min="0" max="500" required></label>
+    <label>φ — Ángulo de fricción <span class="calc-unit">(°)</span><input type="number" id="phi" step="1" value="30" min="0" max="45" required></label>
+  </div>
+</div>
+
+<div class="calc-section">
+  <h3 class="calc-section-title">Combinación de carga</h3>
+  <div class="calc-row">
+    <label>Combinación<select id="combinacion">
+      <option value="estatico">Estática</option>
+      <option value="sismico">Sísmica</option>
+      <option value="dinamico">Cíclica (no-sismo)</option>
+    </select></label>
+    <label id="lbl-V" style="display:none">V — Carga vertical <span class="calc-unit">(kPa)</span><input type="number" id="V" step="10" value="200" min="10" max="2000">
+      <span class="calc-hint">Presión nominal aplicada por la estructura</span></label>
+  </div>
+</div>
+
+<div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+  <button type="submit">Calcular q<sub>ult</sub> / q<sub>adm</sub></button>
+  <button type="button" id="btn-comparar" style="background:#0f2747">📊 Comparar 4 países</button>
+</div>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note" id="calc-note-fs">Factores de Vesic. FS según norma del país elegido (panel derecho).</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicable">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+.calc-widget .calc-hint{font-size:.7rem;color:#94a3b8;font-weight:400;font-style:italic;margin-left:.3rem}
+.calc-widget .calc-warning{margin-top:.6rem;padding:.55rem .7rem;background:#fef3c7;border-left:3px solid #d97706;border-radius:4px;color:#78350f;font-size:.82rem}
+.calc-widget .sismo-badge{margin-top:.6rem;padding:.5rem .7rem;background:#dbeafe;border-left:3px solid #2563eb;border-radius:4px;color:#1e40af;font-size:.82rem;font-weight:600}
+.calc-widget input:disabled,.calc-widget select:disabled{background:#f1f5f9;color:#94a3b8;cursor:not-allowed}
+.calc-widget #calc-resultado .info-line{display:block;margin-top:.25rem;color:#0f766e;font-size:.85em;font-weight:600}
+.calc-widget #calc-resultado .factors-line{display:block;margin-top:.25rem;color:#64748b;font-size:.78em;font-family:ui-monospace,monospace}
+.calc-widget #btn-comparar{background:#0f2747}
+.calc-widget #btn-comparar:hover{background:#1e3a5f}
+
+/* Modal comparador */
+.cmp-overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);z-index:9998;display:none;align-items:flex-start;justify-content:center;padding:2vh 1rem;overflow-y:auto}
+.cmp-overlay.cmp-open{display:flex}
+.cmp-modal{background:#fff;max-width:1100px;width:100%;border-radius:12px;padding:1.5rem;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.cmp-modal h3{margin:0 0 1rem;color:#0f2747;font-size:1.2rem}
+.cmp-modal-close{float:right;background:none;border:0;font-size:1.5rem;color:#64748b;cursor:pointer;line-height:1;padding:0 .5rem}
+.cmp-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
+.cmp-table th,.cmp-table td{border:1px solid #cbd5e1;padding:.55rem .7rem;text-align:left;vertical-align:top}
+.cmp-table th{background:#0f2747;color:#fff;font-weight:600}
+.cmp-table tbody tr:nth-child(even){background:#f8fafc}
+.cmp-table .cmp-qadm{font-weight:700;color:#0f766e;font-size:1.05em;font-variant-numeric:tabular-nums}
+.cmp-table .cmp-norma-cita{font-size:.74rem;color:#64748b;font-style:italic;display:block;margin-top:.2rem}
+
+/* Badges en visor */
+.visor-normas-panel .vn-badge{display:inline-block;font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.08rem .4rem;border-radius:8px;margin-left:.3rem;vertical-align:middle}
+.visor-normas-panel .vn-badge-aplicado{background:#0f766e;color:#fff}
+.visor-normas-panel .vn-badge-info{background:#cbd5e1;color:#334155}
+
+/* Split panel CSS movido a calc.css global (avance 30bis: layout en columna) */
+@media (max-width:1023px){
+  .visor-normas-panel{display:none;margin-top:.6rem;max-height:70vh;overflow-y:auto}
+  .visor-normas-panel.vn-mobile-open{display:block}
+}
+
+/* Header del visor */
+.visor-normas-panel .vn-header{display:flex;flex-direction:column;gap:.6rem;padding-bottom:.7rem;border-bottom:2px solid #00b5a1;margin-bottom:.85rem}
+.visor-normas-panel .vn-title{font-size:.95rem;font-weight:800;color:#0f2747;letter-spacing:.01em}
+.visor-normas-panel .vn-pais-selector{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:#475569}
+.visor-normas-panel .vn-pais-selector label{font-weight:600}
+.visor-normas-panel .vn-pais-selector select{flex:1;padding:.4rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#0f172a;font-weight:600}
+.visor-normas-panel .vn-pais-selector select:focus{outline:2px solid #00b5a1;outline-offset:1px}
+
+/* Secciones */
+.visor-normas-panel .vn-section{margin-bottom:1rem}
+.visor-normas-panel .vn-section-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#0f766e;margin-bottom:.55rem}
+.visor-normas-panel .vn-section-params{background:rgba(255,255,255,.65);border-left:3px solid #0f766e;padding:.6rem .8rem;border-radius:6px}
+
+/* Parámetros */
+.visor-normas-panel .vn-param{margin-bottom:.55rem}
+.visor-normas-panel .vn-param:last-child{margin-bottom:0}
+.visor-normas-panel .vn-param-key{font-weight:600;color:#334155;text-transform:capitalize}
+.visor-normas-panel .vn-param-valor{display:inline-block;background:#0f766e;color:#fff;padding:.05rem .4rem;border-radius:4px;font-weight:700;font-variant-numeric:tabular-nums}
+.visor-normas-panel .vn-param-texto{color:#0f172a}
+.visor-normas-panel .vn-param-fuente{font-size:.74rem;color:#0f766e;font-weight:600;margin-top:.15rem}
+.visor-normas-panel .vn-param-nota{font-size:.74rem;color:#64748b;font-style:italic;margin-top:.1rem}
+
+/* Normas — cards */
+.visor-normas-panel .vn-norma{background:#fff;border:1px solid #cbd5e1;border-radius:8px;padding:.7rem .85rem;margin-bottom:.7rem;font-size:.82rem}
+.visor-normas-panel .vn-norma-cabecera{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin-bottom:.3rem}
+.visor-normas-panel .vn-norma-codigo{font-weight:800;color:#0f2747;font-size:.95rem}
+.visor-normas-panel .vn-norma-anio{color:#64748b;font-weight:600}
+.visor-normas-panel .vn-norma-tipo{margin-left:auto;font-size:.65rem;background:#0f2747;color:#fff;padding:.1rem .45rem;border-radius:9px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.visor-normas-panel .vn-norma-titulo{font-size:.78rem;color:#475569;margin-bottom:.45rem;font-style:italic}
+.visor-normas-panel .vn-articulo{padding:.45rem .55rem;background:#f8fafc;border-left:2px solid #00b5a1;border-radius:4px;margin-bottom:.4rem}
+.visor-normas-panel .vn-articulo-ref{font-weight:700;color:#0f2747;font-size:.78rem;margin-bottom:.2rem}
+.visor-normas-panel .vn-articulo-cita{color:#334155;font-size:.78rem;line-height:1.45;font-style:italic}
+.visor-normas-panel .vn-norma-link{display:inline-block;margin-top:.35rem;font-size:.75rem;color:#0f766e;text-decoration:none;font-weight:600}
+.visor-normas-panel .vn-norma-link:hover{text-decoration:underline}
+</style>
+<script>
+/*
+ * Calculadora Capacidad Portante Vesic (1973) — fórmula completa.
+ * Implementa: Nc, Nq, Nγ + factores forma s + profundidad d + napa freática.
+ * qadm = (qu_neta) / FS + γ·Df  (carga ADMISIBLE NETA, ajustada por sobrecarga)
+ *
+ * El FS y cita de norma vienen del visor según país elegido.
+ */
+(function(){
+function calcular(){
+  var B=parseFloat(document.getElementById('B').value);
+  var L=parseFloat(document.getElementById('L').value);
+  var Df=parseFloat(document.getElementById('Df').value);
+  var Dw=parseFloat(document.getElementById('Dw').value);
+  var g=parseFloat(document.getElementById('gamma').value);
+  var gsat=parseFloat(document.getElementById('gsat').value);
+  var c=parseFloat(document.getElementById('c').value);
+  var phi=parseFloat(document.getElementById('phi').value);
+  var tipo=document.getElementById('tipo').value;
+  var combinacion=document.getElementById('combinacion').value;
+  var out=document.getElementById('calc-resultado');
+  var note=document.getElementById('calc-note-fs');
+
+  // Validaciones físicas
+  if(!isFinite(B)||!isFinite(L)||!isFinite(Df)||!isFinite(g)||!isFinite(c)||!isFinite(phi)||B<=0||L<=0||g<=0||c<0||phi<0||Df<0){
+    out.innerHTML='<span class="err">Ingresa valores numéricos positivos en todos los campos requeridos.</span>';return null;
+  }
+  if(L<B){out.innerHTML='<span class="err">L (largo) debe ser ≥ B (ancho). Si tu zapata es B>L, intercambia los valores.</span>';return null;}
+  if(!isFinite(gsat)||gsat<g){gsat=g+1;}
+
+  // Tipo zapata → ajustes de B, L
+  if(tipo==='cuadrada'){L=B;}
+  if(tipo==='circular'){L=B;}
+  if(tipo==='corrida'){L=B*100;}  // L muy grande para forzar B/L≈0
+
+  // FS desde visor
+  var paramKey=combinacion==='sismico'?'FS_sismico':(combinacion==='dinamico'?'FS_dinamico':'FS_estatico');
+  var FS=3.0,citaFS='—',paisActual='?';
+  var khAplicado=0,khCita='';
+  if(window.VisorNormas){
+    var v=window.VisorNormas.getParam(paramKey);
+    if(typeof v==='number'&&v>0){FS=v;}
+    citaFS=window.VisorNormas.getNormaCita(paramKey)||'—';
+    paisActual=window.VisorNormas.getPais()||'?';
+    if(combinacion==='sismico'){
+      var khv=window.VisorNormas.getParam('kh_horizontal');
+      if(typeof khv==='number'&&khv>0){khAplicado=khv;khCita=window.VisorNormas.getNormaCita('kh_horizontal')||'';}
+    }
+  }
+
+  // Factores Nc Nq Nγ (Vesic)
+  var phir=phi*Math.PI/180;
+  var Nq,Nc,Ng;
+  if(phi===0){Nq=1;Nc=5.14;Ng=0;}
+  else{
+    Nq=Math.exp(Math.PI*Math.tan(phir))*Math.pow(Math.tan(Math.PI/4+phir/2),2);
+    Nc=(Nq-1)/Math.tan(phir);
+    Ng=2*(Nq+1)*Math.tan(phir);
+  }
+
+  // Factores de forma sc, sq, sγ (Vesic)
+  var BL=B/L;  // ratio adimensional (corrida → ~0)
+  var sc,sq,sg;
+  if(tipo==='circular'){
+    sc=1+(Nq/Nc); sq=1+Math.tan(phir); sg=0.6;
+  } else {
+    sc=1+BL*(Nq/Nc);
+    sq=1+BL*Math.tan(phir);
+    sg=Math.max(0.6, 1-0.4*BL);
+  }
+
+  // Factores de profundidad dq, dc, dγ (Hansen-Vesic)
+  // k = Df/B si Df<=B; atan(Df/B) si Df>B
+  var k=(Df<=B)? (Df/B) : Math.atan(Df/B);
+  var dq=phi===0 ? 1 : 1+2*Math.tan(phir)*Math.pow(1-Math.sin(phir),2)*k;
+  var dc=phi===0 ? 1+0.4*k : dq-(1-dq)/(Nc*Math.tan(phir));
+  var dg=1;
+
+  // Napa freática — ajuste γ del término 0.5·γ·B·Nγ y q del término q·Nq
+  // Caso 1: Dw>=Df+B → no afecta
+  // Caso 2: Df<=Dw<Df+B → γ ponderado en zona de cuña: γ_avg = γ' + (Dw-Df)/B·(γ-γ')
+  // Caso 3: Dw<Df → afecta también a la sobrecarga q
+  // (γ' = γsat - 9.81 ≈ γsat - 10)
+  var gamma_w=9.81;
+  var gPrime=gsat-gamma_w;
+  var gammaTermNg=g; // γ aplicado al término 0.5·γ·B·Nγ
+  var qSobrecarga=g*Df; // sobrecarga base q = γ·Df
+  var notaNapa='';
+  if(isFinite(Dw)&&Dw>=0){
+    if(Dw>=Df+B){
+      notaNapa='Napa profunda (Dw≥Df+B): no afecta qu.';
+    } else if(Dw>=Df){
+      // Caso 2: napa entre Df y Df+B
+      var d=(Dw-Df)/B; // 0 a 1
+      gammaTermNg=gPrime+d*(g-gPrime);
+      notaNapa='Napa entre Df y Df+B (Dw='+Dw.toFixed(1)+' m): γ ponderado = '+gammaTermNg.toFixed(2)+' kN/m³ en el término Nγ.';
+    } else {
+      // Caso 3: napa por encima de Df
+      gammaTermNg=gPrime;
+      qSobrecarga=g*Dw + gPrime*(Df-Dw);
+      notaNapa='Napa sobre el sello (Dw='+Dw.toFixed(1)+' m): γ′ en Nγ y q = γ·Dw + γ′·(Df-Dw) = '+qSobrecarga.toFixed(1)+' kPa.';
+    }
+  }
+
+  // Factores de inclinación de carga sísmica (Hansen-Vesic completo)
+  // En sísmica: H = kh·V (carga horizontal inducida por sismo) → reduce qu via factores i
+  // Fix 3: fórmula iq completa con cohesión: iq = (1 - H/(V + B'·L'·c·cot φ))^m
+  // Fix 2: validar V>0 explícito + warning si falta
+  var ic=1, iq=1, ig=1, V_in=NaN, H_in=NaN, notaSismo='', warningSismo='';
+  if(combinacion==='sismico'){
+    V_in=parseFloat(document.getElementById('V').value);
+    if(!isFinite(V_in)||V_in<=0){
+      warningSismo='⚠ Combinación sísmica seleccionada pero V (vertical de servicio) no ingresado. Resultado SIN inclinación de carga — puede ser optimista. Ingresá un V > 0 para aplicar factores i.';
+    } else if(khAplicado>0){
+      H_in=khAplicado*V_in;
+      // m: exponente Hansen para zapata rectangular (carga inclinada en B)
+      var m_ratio=B/Math.max(L,B);
+      var m=(2+m_ratio)/(1+m_ratio);
+      // Fórmula completa con cohesión: denom incluye B·L·c·cot(φ)
+      var denomBase = V_in + (phi>0 ? B*L*c/Math.tan(phir) : 0);
+      var ratio = (denomBase>0) ? Math.max(0, 1 - H_in/denomBase) : Math.max(0, 1 - H_in/Math.max(V_in,1));
+      iq = Math.pow(ratio, m);
+      ig = Math.pow(ratio, m+1);
+      // ic: si φ>0 usar derivación de iq; si φ=0 (suelos cohesivos puros), fórmula de Hansen específica
+      ic = phi>0 ? iq - (1-iq)/(Nc*Math.tan(phir)) : (c>0 ? 1 - (m*H_in)/(B*L*c*Nc) : 1);
+      ic = Math.max(0.1, Math.min(1, ic));
+      notaSismo='Carga horizontal sísmica: H = kh·V = '+khAplicado.toFixed(2)+' · '+V_in.toFixed(0)+' = '+H_in.toFixed(1)+' kPa. Factores Hansen: ic='+ic.toFixed(2)+' · iq='+iq.toFixed(2)+' · iγ='+ig.toFixed(2)+'.';
+    }
+  }
+
+  // qu (Vesic completo con factores i)
+  var qu_termoC = c*Nc*sc*dc*ic;
+  var qu_termoQ = qSobrecarga*Nq*sq*dq*iq;
+  var qu_termoG = 0.5*gammaTermNg*B*Ng*sg*dg*ig;
+  var qult = qu_termoC + qu_termoQ + qu_termoG;
+
+  // qadm NETA: (qu - q_sobrecarga)/FS + q_sobrecarga
+  var qadm = (qult - qSobrecarga)/FS + qSobrecarga;
+
+  // Warnings físicos
+  var warns=[];
+  if(phi>40 && c>20) warns.push('φ>40° y c>20 kPa simultáneamente es inusual: granular denso típicamente tiene c≈0.');
+  if(Df>3*B) warns.push('Df > 3·B: la zapata ya no se considera superficial. Verificar con cálculo de cimentación intermedia/profunda.');
+  if(phi===0 && c<5) warns.push('φ=0 y c<5 kPa: suelo muy blando, capacidad portante muy baja.');
+  if(qadm<50) warns.push('qadm < 50 kPa: revisar parámetros, suelo poco apto para fundación directa.');
+
+  // Render
+  var html='<span class="ok">qult = '+qult.toFixed(1)+' kPa · qadm (neta) = '+qadm.toFixed(1)+' kPa (FS='+FS.toFixed(2)+')</span>';
+  html+='<span class="factors-line">Nc='+Nc.toFixed(2)+' · Nq='+Nq.toFixed(2)+' · Nγ='+Ng.toFixed(2)+
+        ' | sc='+sc.toFixed(2)+' sq='+sq.toFixed(2)+' sγ='+sg.toFixed(2)+
+        ' | dc='+dc.toFixed(2)+' dq='+dq.toFixed(2)+' dγ='+dg.toFixed(2)+'</span>';
+  html+='<span class="factors-line">qu = c·Nc·sc·dc + q·Nq·sq·dq + ½·γ·B·Nγ·sγ·dγ = '+qu_termoC.toFixed(0)+' + '+qu_termoQ.toFixed(0)+' + '+qu_termoG.toFixed(0)+' = '+qult.toFixed(0)+' kPa</span>';
+  html+='<span class="info-line">📍 País aplicado: '+paisActual+' · FS '+combinacion+' = '+FS.toFixed(2)+' según '+citaFS+'</span>';
+  // Fix 8: badge sísmica visible si V aplicado
+  if(combinacion==='sismico'&&isFinite(V_in)&&V_in>0&&khAplicado>0){
+    html+='<div class="sismo-badge">⚡ Sísmica activa · V = '+V_in.toFixed(0)+' kPa · kh = '+khAplicado.toFixed(2)+' (país '+paisActual+') · ic·iq·iγ aplicados a qu</div>';
+  }
+  if(warningSismo) html+='<div class="calc-warning">'+warningSismo+'</div>';
+  if(notaSismo) html+='<span class="factors-line">🌊 '+notaSismo+'</span>';
+  if(notaNapa) html+='<span class="factors-line">💧 '+notaNapa+'</span>';
+  for(var i=0;i<warns.length;i++) html+='<div class="calc-warning">⚠ '+warns[i]+'</div>';
+  out.innerHTML=html;
+
+  if(note){note.textContent='FS = '+FS.toFixed(2)+' según '+citaFS+' — cambia si seleccionas otro país o combinación.';}
+  return {qult:qult, qadm:qadm, FS:FS, citaFS:citaFS, paisActual:paisActual};
+}
+
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){e.preventDefault();calcular();});
+
+// Recalcular al cambiar país
+window.addEventListener('visor-normas:cambio-pais',function(){
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+  var combinacion=document.getElementById('combinacion').value;
+  var paramKey=combinacion==='sismico'?'FS_sismico':(combinacion==='dinamico'?'FS_dinamico':'FS_estatico');
+  var FS=3.0,cita='—';
+  if(window.VisorNormas){var v=window.VisorNormas.getParam(paramKey);if(typeof v==='number'&&v>0)FS=v;cita=window.VisorNormas.getNormaCita(paramKey)||cita;}
+  var n=document.getElementById('calc-note-fs');if(n)n.textContent='FS = '+FS.toFixed(2)+' según '+cita+' — cambia si seleccionas otro país o combinación.';
+});
+document.getElementById('combinacion').addEventListener('change',function(){
+  // Mostrar/ocultar campo V según combinación
+  var lblV=document.getElementById('lbl-V');
+  if(lblV){lblV.style.display=this.value==='sismico'?'flex':'none';}
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+});
+// Estado inicial del campo V
+(function(){var lblV=document.getElementById('lbl-V');var sel=document.getElementById('combinacion');if(lblV&&sel){lblV.style.display=sel.value==='sismico'?'flex':'none';}})();
+
+// Fix 1: deshabilitar L cuando tipo ≠ rectangular + sincronizar L=B
+function ajustarL(){
+  var tipo=document.getElementById('tipo').value;
+  var Lin=document.getElementById('L');
+  var Bin=document.getElementById('B');
+  if(tipo==='rectangular'){
+    Lin.disabled=false;
+    Lin.title='Largo independiente de B (zapata rectangular)';
+  } else {
+    Lin.disabled=true;
+    Lin.value=Bin.value;  // sincronizar
+    Lin.title=tipo==='corrida'?'Corrida: L se trata como ≫B internamente':'L=B forzado por tipo '+tipo;
+  }
+}
+document.getElementById('tipo').addEventListener('change',function(){
+  ajustarL();
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+});
+document.getElementById('B').addEventListener('input',function(){
+  // si tipo no es rectangular, mantener L=B
+  var tipo=document.getElementById('tipo').value;
+  if(tipo!=='rectangular'){document.getElementById('L').value=this.value;}
+});
+ajustarL(); // estado inicial
+document.getElementById('V').addEventListener('input',function(){
+  if(document.getElementById('combinacion').value==='sismico' && document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+});
+
+// Comparador 4 países lado-a-lado
+document.getElementById('btn-comparar').addEventListener('click',function(){
+  if(!window.VisorNormas||!window.VisorNormas._dataAll){
+    alert('Cargando normas, intentá en un momento.');return;
+  }
+  // Snapshot inputs actuales
+  var snap={B:document.getElementById('B').value,L:document.getElementById('L').value,
+    Df:document.getElementById('Df').value,Dw:document.getElementById('Dw').value,
+    gamma:document.getElementById('gamma').value,gsat:document.getElementById('gsat').value,
+    c:document.getElementById('c').value,phi:document.getElementById('phi').value,
+    tipo:document.getElementById('tipo').value,combinacion:document.getElementById('combinacion').value,
+    V:document.getElementById('V').value};
+  var paisOriginal=window.VisorNormas.getPais();
+  var resultados=[];
+  var dataAll=window.VisorNormas._dataAll;
+  Object.keys(dataAll.paises).forEach(function(p){
+    window.VisorNormas._setPais(p);
+    var res=calcular();
+    if(res){
+      var pData=dataAll.paises[p];
+      // Extraer info regulatoria (no calculada)
+      // Fix 6: kh con zona representativa breve (extraída de la nota del JSON)
+      var khP=pData.params.kh_horizontal;
+      var khInfo='—';
+      if(khP){
+        var nota=khP.nota||'';
+        // extraer "Zona X" o segmento entre paréntesis
+        var zonaMatch=nota.match(/\(([^)]+)\)/);
+        var zonaStr=zonaMatch?zonaMatch[1]:nota.split('—')[0].trim();
+        // toFixed(3) y luego trim de ceros sobrantes para que 0.20→"0.20", 0.075→"0.075"
+        var khStr=khP.valor.toFixed(3).replace(/0$/,'').replace(/\.$/,'');
+        khInfo=khStr+' · '+zonaStr.slice(0,50);
+      }
+      var vs30=pData.params.Vs30_umbral_A? pData.params.Vs30_umbral_A.valor : (pData.params.Vs30_umbral_I? pData.params.Vs30_umbral_I.valor : '—');
+      var exencion=pData.params.exencion_EMS? pData.params.exencion_EMS.texto.split(':')[0]:'—';
+      // Fix 7: extraer factores i del DOM rendereado (calculados por calcular())
+      var domI={ic:1,iq:1,ig:1};
+      var factoresMatch=document.getElementById('calc-resultado').innerHTML.match(/ic=([\d.]+)\s*·\s*iq=([\d.]+)\s*·\s*iγ=([\d.]+)/);
+      if(factoresMatch){domI.ic=parseFloat(factoresMatch[1]);domI.iq=parseFloat(factoresMatch[2]);domI.ig=parseFloat(factoresMatch[3]);}
+      resultados.push({pais:p,label:pData.label_largo||pData.label,
+        qult:res.qult,qadm:res.qadm,FS:res.FS,cita:res.citaFS,
+        khInfo:khInfo, vs30:vs30, exencion:exencion,
+        ic:domI.ic,iq:domI.iq,ig:domI.ig});
+    }
+  });
+  // Restaurar país original
+  window.VisorNormas._setPais(paisOriginal);
+  calcular();
+
+  // Render modal
+  var combinacionLabel={estatico:'Estática',sismico:'Sísmica',dinamico:'Cíclica'}[snap.combinacion];
+  var html='<button class="cmp-modal-close" aria-label="Cerrar">×</button>';
+  html+='<h3>Comparativa entre 4 países — combinación '+combinacionLabel+'</h3>';
+  var inputsTxt='B='+snap.B+', L='+snap.L+', Df='+snap.Df+', γ='+snap.gamma+', c='+snap.c+', φ='+snap.phi+'°';
+  if(snap.combinacion==='sismico') inputsTxt+=', V='+snap.V+' kPa';
+  html+='<p style="font-size:.85rem;color:#475569;margin:.4rem 0 .8rem">Mismos inputs ('+inputsTxt+'), distinto país y norma.</p>';
+
+  // Tabla 1: Cálculo (qult, FS, qadm) — con factores i si es sísmica
+  html+='<h4 style="margin:.8rem 0 .3rem;color:#0f2747;font-size:.95rem">📐 Resultado del cálculo</h4>';
+  var esSismica=(snap.combinacion==='sismico');
+  html+='<table class="cmp-table"><thead><tr><th>País</th><th>qult (kPa)</th><th>FS</th>';
+  if(esSismica){html+='<th>Factores i (ic·iq·iγ)</th>';}
+  html+='<th>qadm neta (kPa)</th><th>Norma FS aplicada</th></tr></thead><tbody>';
+  resultados.forEach(function(r){
+    html+='<tr><td><strong>'+r.label+'</strong></td><td>'+r.qult.toFixed(1)+'</td>';
+    html+='<td>'+r.FS.toFixed(2)+'</td>';
+    if(esSismica){
+      html+='<td style="font-size:.78rem;color:#0f766e">'+r.ic.toFixed(2)+' · '+r.iq.toFixed(2)+' · '+r.ig.toFixed(2)+'</td>';
+    }
+    html+='<td class="cmp-qadm">'+r.qadm.toFixed(1)+'</td>';
+    html+='<td><span class="cmp-norma-cita">'+r.cita+'</span></td></tr>';
+  });
+  html+='</tbody></table>';
+
+  // Tabla 2: Marco regulatorio (info no calculada)
+  html+='<h4 style="margin:1.1rem 0 .3rem;color:#0f2747;font-size:.95rem">🌐 Marco regulatorio (información complementaria)</h4>';
+  html+='<table class="cmp-table"><thead><tr><th>País</th><th>kh sísmico (zona representativa)</th><th>Vs30 — Site Class más rígida del país</th><th>Exención EMS</th></tr></thead><tbody>';
+  resultados.forEach(function(r){
+    html+='<tr><td><strong>'+r.label+'</strong></td>';
+    html+='<td style="font-size:.8rem">'+r.khInfo+'</td>';
+    html+='<td>'+r.vs30+'</td>';
+    html+='<td style="font-size:.8rem">'+r.exencion+'</td></tr>';
+  });
+  html+='</tbody></table>';
+  // Fix 5: nota explicativa Vs30
+  html+='<p style="font-size:.72rem;color:#94a3b8;margin:.3rem 0 0;font-style:italic">⚠ Nota Vs30: las clases A/I no son directamente comparables entre normas — cada país define umbrales distintos para "roca dura". Un sitio Vs30=1000 m/s sería Site Class A en Chile (≥900) pero Class B en USA (≥1500).</p>';
+
+  html+='<p style="font-size:.78rem;color:#64748b;margin-top:.8rem;font-style:italic">';
+  if(snap.combinacion==='estatico'){
+    html+='En combinación <strong>estática</strong>, los 4 países comparten FS=3.0 (consenso internacional). Para ver diferencia en el qadm, cambiá a combinación <strong>sísmica</strong> e ingresá V — los factores de inclinación de carga (ic, iq, iγ) varían según kh por país.';
+  } else if(snap.combinacion==='sismico'){
+    html+='En <strong>sísmica</strong>, USA aplica FS=2.5 (más conservador), CL/ES/BR aplican FS=2.0. Además los kh varían: USA 0.30 (high seismic CA) → CL 0.20 (Zona 3 NCh) → ES 0.10 → BR 0.075. Eso reduce qu por inclinación de carga.';
+  } else {
+    html+='En cargas cíclicas no-sísmicas, NCh 3171 es la más conservadora (FS=4.0).';
+  }
+  html+='</p>';
+  var ov=document.querySelector('.cmp-overlay');
+  if(!ov){
+    ov=document.createElement('div');ov.className='cmp-overlay';
+    ov.innerHTML='<div class="cmp-modal" role="dialog" aria-modal="true"></div>';
+    document.body.appendChild(ov);
+    ov.addEventListener('click',function(e){if(e.target===ov)ov.classList.remove('cmp-open');});
+  }
+  ov.querySelector('.cmp-modal').innerHTML=html;
+  ov.querySelector('.cmp-modal-close').addEventListener('click',function(){ov.classList.remove('cmp-open');});
+  ov.classList.add('cmp-open');
+});
+})();
+// Toggle del drawer mobile
+(function(){
+  var btn=document.querySelector('.visor-mobile-toggle');
+  var panel=document.getElementById('visor-normas');
+  if(!btn||!panel)return;
+  btn.addEventListener('click',function(){
+    var isOpen=panel.classList.toggle('vn-mobile-open');
+    btn.setAttribute('aria-expanded',isOpen?'true':'false');
+    btn.textContent=isOpen?'✕ Cerrar marco normativo':'📖 Ver marco normativo';
+  });
+})();
+</script>
+<script src="/widgets/visor-normas.js" data-slug="capacidad-portante-terzaghi-vesic"></script>
+
+<h2>Ejemplo de cálculo</h2>
+<table class="ejemplo">
+<caption>Datos de entrada — zapata aislada edificio residencial en zona urbana</caption>
+<thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>B × L (ancho × largo)</td><td>2,0 × 2,0 m</td></tr>
+<tr><td>Profundidad de desplante Df</td><td>1,5 m</td></tr>
+<tr><td>Cohesión c</td><td>10 kPa</td></tr>
+<tr><td>Ángulo de fricción φ</td><td>30°</td></tr>
+<tr><td>Peso unitario γ</td><td>18 kN/m³</td></tr>
+<tr><td>Nivel freático</td><td>No detectado en 5 m</td></tr>
+<tr><td>FS estático</td><td>3,0</td></tr>
+</tbody>
+</table>
+<p>Factores con φ = 30°: Nq = e^(π·0,577) · tan²60° = 6,40 · 3,0 = 18,4; Nc = (18,4 − 1) / 0,577 = 30,1; Nγ = 2 · 19,4 · 0,577 = 22,4. Sobrecarga q = γ · Df = 18 · 1,5 = 27 kPa. Factores de forma (B/L = 1): sc = 1 + 1·(18,4/30,1) = 1,61; sq = 1 + 1·0,577 = 1,58; sγ = 1 − 0,4 = 0,6. Factores de profundidad (Df/B = 0,75): dq = 1 + 2·0,577·(1 − 0,5)² · 0,75 = 1 + 0,217 = 1,22; dc ≈ 1,23; dγ = 1. qu = 10·30,1·1,61·1,23 + 27·18,4·1,58·1,22 + 0,5·18·2·22,4·0,6·1 = 596 + 957 + 242 = 1 795 kPa. qadm = (1 795 − 27) / 3 + 27 = 616 kPa.</p>
+<p class="resultado"><strong>Resultado:</strong> qu = 1 795 kPa · qadm = 616 kPa (FS = 3, estático).</p>
+
+<h2>Interpretación de resultados</h2>
+<p>Una capacidad admisible de 616 kPa es alta y típica de suelo arenoso denso con cohesión aparente. Para diseño real debe verificarse también asentamientos (Schmertmann o elástico) porque frecuentemente gobiernan sobre la capacidad portante. En presencia de napa bajo la zapata, hay que reemplazar γ por γ' = γsat − γw en los términos afectados, lo que puede reducir qadm 30-50 %. En zona sísmica, NCh 3171 permite FS = 2 para combinaciones con sismo.</p>
+
+<h2>Normativas de referencia</h2>
+<ul>
+<li>NCh 3171.Of2017 — Diseño estructural — Fundaciones y muros de contención</li>
+<li>ACI 318-19 — Capítulo 13 fundaciones</li>
+<li>Terzaghi, K. (1943). Theoretical Soil Mechanics</li>
+<li>Vesic, A.S. (1973). Analysis of ultimate loads of shallow foundations</li>
+<li>Meyerhof, G.G. (1963). Some recent research on bearing capacity</li>
+<li>DS 61/2011 y NCh 433 — Combinaciones con sismo</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Cuándo uso Terzaghi y cuándo Vesic?</summary><p>Terzaghi clásico es útil para verificación manual rápida con zapatas corridas sin inclinación de carga ni napa. Vesic es la formulación general y se recomienda en la práctica actual porque incorpora factores de forma, profundidad, inclinación y base inclinada. NCh 3171 acepta ambas siempre que se documenten las hipótesis.</p></details>
+<details><summary>¿Qué factor de seguridad usar?</summary><p>Para combinaciones estáticas, FS = 3,0 es el mínimo tradicional. NCh 3171 permite FS = 2,0 para combinaciones con sismo severo. Si hay cargas cíclicas sin sismo (maquinaria) se sube a FS = 4,0. Diseños LRFD usan factores de resistencia (0,45-0,60) en lugar de FS global.</p></details>
+<details><summary>¿Cómo se trata la napa freática?</summary><p>Si la napa está sobre la base de la zapata, todos los γ de los términos afectados se reemplazan por γ'. Si está entre la base y Df, se pondera según profundidad. Si está bajo la zapata a más de 1·B, no afecta significativamente. Es un error frecuente olvidar este ajuste: puede sobreestimar qu en 30-50 %.</p></details>
+<details><summary>¿Capacidad portante o asentamiento gobierna el diseño?</summary><p>En suelos granulares densos y rocas, capacidad portante suele ser conservadora y asentamiento manda. En arcillas blandas y limos compresibles, al revés. Diseñar solo por capacidad portante sin verificar asentamiento es una mala práctica que llega a colapsar edificios por asentamientos diferenciales excesivos.</p></details>
+
+<h2>Calculadoras relacionadas</h2>
+<ul>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/">Asentamiento elástico — método Schmertmann</a></li>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/">Consolidación 1D Terzaghi</a></li>
+<li><a href="/herramientas-geotecnicas/empujes-muros/">Verificación de muro — FS vuelco y deslizamiento</a></li>
+<li><a href="/herramientas-geotecnicas/ensayos/">SPT — correlaciones de φ, Dr, Su</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "SoftwareApplication", "name": "Calculadora Capacidad Portante Terzaghi/Vesic", "applicationCategory": "EngineeringApplication", "operatingSystem": "Web", "description": "qu y qadm para zapatas con factores Nc, Nq, Nγ, forma, profundidad e inclinación. FS y norma del país elegido (Chile NCh 3171, USA ASCE 7-22, España CTE DB SE-C, Brasil ABNT NBR 6122). Calculadora gratuita de Mecánica de Suelos.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "isBasedOn": [{"@type": "Book", "name": "NCh 3171:2017 — Diseño estructural — Fundaciones", "url": "https://www.inn.cl/"}, {"@type": "Book", "name": "ASCE 7-22 — Minimum Design Loads", "url": "https://www.asce.org/"}, {"@type": "Book", "name": "CTE DB SE-C — Cimientos", "url": "https://www.codigotecnico.org/"}, {"@type": "Book", "name": "ABNT NBR 6122:2022 — Projeto e execução de fundações", "url": "https://www.abnt.org.br/"}]},
+    {"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "¿Terzaghi o Vesic?", "acceptedAnswer": {"@type": "Answer", "text": "Vesic es la formulación general recomendada; Terzaghi clásico para verificación manual rápida."}},
+      {"@type": "Question", "name": "¿FS a usar?", "acceptedAnswer": {"@type": "Answer", "text": "FS = 3,0 estático, 2,0 con sismo según NCh 3171; 4,0 en cargas cíclicas."}},
+      {"@type": "Question", "name": "¿Cómo afecta la napa?", "acceptedAnswer": {"@type": "Answer", "text": "γ se reemplaza por γ' en términos afectados; olvidar el ajuste sobreestima qu 30-50 %."}},
+      {"@type": "Question", "name": "¿Capacidad o asentamiento gobierna?", "acceptedAnswer": {"@type": "Answer", "text": "En granulares densos asentamiento gobierna; en arcillas blandas capacidad gobierna."}}
+    ]},
+    {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Herramientas geotécnicas", "item": "https://ingeotecnia.net/herramientas-geotecnicas"},
+        {"@type": "ListItem", "position": 3, "name": "Capacidad portante y fundaciones", "item": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante"},
+        {"@type": "ListItem", "position": 4, "name": "Capacidad portante Terzaghi/Vesic", "item": "https://ingeotecnia.net/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic"}
+      ]}
+  ]
+}
+</script>
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Capacidad Portante</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Asentamiento Elástico — Schmertmann</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-pilotes.html" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Capacidad Axial de Pilotes — punta, fricción y admisible</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Consolidación 1D — Terzaghi</a></li>
+      <li><a href="/herramientas-geotecnicas/capacidad-portante/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Consolidación 3D — Efecto Mandel-Cryer</a></li>
+  </ul>
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+    Más herramientas en <a href="/herramientas-geotecnicas/capacidad-portante" style="color:#0d9488">Capacidad Portante</a> · Volver al
+    <a href="/herramientas-geotecnicas" style="color:#0d9488">índice de Mecánica de Suelos</a>
+  </p>
+</aside>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>

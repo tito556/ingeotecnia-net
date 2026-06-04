@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<title>Corte Directo: c, φ desde Ensayo σ-τ · IngeoTecnia</title>
+<meta name="author" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo">
+<meta property="og:title" content="Corte Directo: c, φ desde Ensayo σ-τ · IngeoTecnia">
+<meta property="og:description" content="Obtén cohesión c y ángulo de fricción φ desde ensayo de corte directo ASTM D3080 por regresión lineal Mohr-Coulomb. Parámetros pico y residuales.">
+<meta property="og:image" content="https://ingeotecnia.net/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="IngeoTecnia · Estudios Geotécnicos Chile">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Corte Directo: c, φ desde Ensayo σ-τ · IngeoTecnia">
+<meta name="twitter:description" content="Obtén cohesión c y ángulo de fricción φ desde ensayo de corte directo ASTM D3080 por regresión lineal Mohr-Coulomb. Parámetros pico y residuales...">
+<meta name="twitter:image" content="https://ingeotecnia.net/og-home.jpg">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f2747">
+<meta name="description" content="Obtén cohesión c y ángulo de fricción φ desde ensayo de corte directo ASTM D3080 por regresión lineal Mohr-Coulomb. Parámetros pico y residuales...">
+<link rel="canonical" href="https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo">
+
+  
+  <script src="/widgets/sidebar-panel.js" defer></script>
+
+<!-- AUTO-HOWTO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar la calculadora Geotechnical Engineering",
+  "description": "Pasos para usar esta calculadora gratuita de Mecánica de Suelos en la categoría Ensayos In Situ.",
+  "totalTime": "PT2M",
+  "inLanguage": "es",
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Calculadora de Mecánica de Suelos"
+    }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Ingresa los datos del suelo",
+      "text": "Completa los parámetros requeridos según el tipo de cálculo (Ensayos In Situ). Los campos están etiquetados con sus unidades estándar.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo#input"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Selecciona la normativa de tu país",
+      "text": "Elige el código aplicable (NCh, ASTM, AASHTO, Eurocode 7/8, FHWA u otros). La calculadora ajusta los coeficientes y factores de seguridad automáticamente.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo#norma"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Lee el resultado y descárgalo",
+      "text": "El resultado aparece con la fórmula desarrollada paso a paso. Puedes copiar los valores o exportar a Excel para anexar a tu informe geotécnico.",
+      "url": "https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo#resultado"
+    }
+  ]
+}
+</script>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header class="hdr">
+  <div class="hdr-main">
+    <div class="c hdr-main-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4"  y1="7"  x2="12" y2="5"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="7"  x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="4"  y1="17" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="5"  x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="7"  stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="12" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <line x1="12" y1="19" x2="20" y2="17" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <circle cx="4"  cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="4"  cy="17" r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="5"  r="1.7" fill="currentColor"/>
+            <circle cx="12" cy="12" r="2.1" fill="currentColor"/>
+            <circle cx="12" cy="19" r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="7"  r="1.7" fill="currentColor"/>
+            <circle cx="20" cy="17" r="1.7" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div>Geotechnical Engineering</div>
+          <p>Intelligence Platform</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/">Producto</a>
+        <a href="/">Acceso gratuito</a>
+        <a href="/">Planes</a>
+        <a href="/">Qué incluye</a>
+        <a href="/herramientas-geotecnicas">47 calcs gratis</a>
+      </nav>
+      <a href="/" class="btn btn-primary">Probar gratis</a>
+    </div>
+  </div>
+</header>
+
+<article itemscope itemtype="https://schema.org/SoftwareApplication">
+
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <a href="/">Inicio</a> › <a href="/herramientas-geotecnicas">Herramientas geotécnicas</a> › <a href="/herramientas-geotecnicas/ensayos">Ensayos in situ y laboratorio</a> › <span>Corte directo</span>
+</nav>
+
+<h1>Calculadora Corte Directo — Cohesión c y Ángulo φ</h1>
+
+<p class="lead">Mediante el ensayo de corte directo según ASTM D3080, se determinan los parámetros de resistencia al corte de Mohr-Coulomb: cohesión c y ángulo de friccion φ. La calculadora ajusta</p>
+
+<h2>¿Qué es y cuándo aplicarlo?</h2>
+<p>Corte directo es el ensayo más usado para caracterizar resistencia al corte en suelos granulares y cohesivos-friccionales: arenas, limos y arcillas sin finos. Es rápido (1-3 días) y económico, pero impone el plano de falla y no mide presiones de poros, lo que limita su precisión en arcillas saturadas (donde se prefiere triaxial CU con mediciones de u). Se usa para diseño de fundaciones, muros de contención, taludes y rellenos. En rocas se aplica a contactos y discontinuidades (barrera-barrera Roger Hoek 1977, ISRM).</p>
+
+<h2>Fórmulas aplicadas</h2>
+<div class="formulas">
+<p><strong>Criterio de Mohr-Coulomb:</strong></p>
+<p>τ = c + σn · tan φ</p>
+<p><strong>Regresión lineal de n puntos:</strong></p>
+<p>tan φ = [n·Σ(σn·τ) − Σσn·Στ] / [n·Σσn² − (Σσn)²]</p>
+<p>c = (Στ − tan φ · Σσn) / n</p>
+<p><strong>Coeficiente de determinación R²:</strong></p>
+<p>R² = 1 − SSres/SStot, donde SSres = Σ(τobs − τpred)²</p>
+<p><strong>Parámetros residuales:</strong> cr ≈ 0 (se pierde cohesión tras rotura); φr se obtiene en rama descendente o ensayo con desplazamiento grande (reverse direct shear)</p>
+<p><strong>Criterios de aceptación ASTM D3080:</strong> 3-4 puntos con σn cubriendo rango del proyecto; velocidad de corte 0,1-1 mm/min (drenado); R² &gt; 0,95</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Calculadora interactiva de corte directo">
+<h2>Calcular en línea</h2>
+<p class="calc-intro">Ingresa 3 pares (σn, τ) y obtén c y φ por regresión lineal Mohr-Coulomb.</p>
+<form id="calc-form" novalidate>
+<div class="calc-row">
+<label>σ1 (kPa)<input type="number" id="s1" step="1" value="50" required></label>
+<label>τ1 (kPa)<input type="number" id="t1" step="1" value="46" required></label>
+<label>σ2 (kPa)<input type="number" id="s2" step="1" value="100" required></label>
+<label>τ2 (kPa)<input type="number" id="t2" step="1" value="76" required></label>
+<label>σ3 (kPa)<input type="number" id="s3" step="1" value="200" required></label>
+<label>τ3 (kPa)<input type="number" id="t3" step="1" value="138" required></label>
+</div>
+<button type="submit">Calcular c, φ</button>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note">Regresión de mínimos cuadrados con 3 puntos. Si c resulta negativa pequeña se reporta como 0 (arena sin cohesión real).</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicable">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<script src="/widgets/visor-normas.js" data-slug="corte-directo"></script>
+<script>
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Cerrar marco normativo':'📖 Ver marco normativo';});})();
+</script>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+</style>
+<script>
+(function(){
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var s=[parseFloat(document.getElementById('s1').value),parseFloat(document.getElementById('s2').value),parseFloat(document.getElementById('s3').value)];
+var t=[parseFloat(document.getElementById('t1').value),parseFloat(document.getElementById('t2').value),parseFloat(document.getElementById('t3').value)];
+var out=document.getElementById('calc-resultado');
+var ok=s.every(isFinite)&&t.every(isFinite);
+if(!ok){out.innerHTML='<span class="err">Ingresa valores numéricos válidos.</span>';return;}
+var n=3,Ss=s[0]+s[1]+s[2],St=t[0]+t[1]+t[2];
+var Sst=s[0]*t[0]+s[1]*t[1]+s[2]*t[2];
+var Ss2=s[0]*s[0]+s[1]*s[1]+s[2]*s[2];
+var den=n*Ss2-Ss*Ss;
+if(den===0){out.innerHTML='<span class="err">Puntos σ colineales.</span>';return;}
+var tanphi=(n*Sst-Ss*St)/den;
+var c=(St-tanphi*Ss)/n;
+var phi=Math.atan(tanphi)*180/Math.PI;
+var cRep=c<0&&c>-5?0:c;
+out.innerHTML='<span class="ok">c = '+cRep.toFixed(1)+' kPa · φ = '+phi.toFixed(1)+'° · tan φ = '+tanphi.toFixed(4)+'</span>'+
+'Σσ='+Ss.toFixed(0)+' · Στ='+St.toFixed(0)+' · Σσ²='+Ss2.toFixed(0)+' · Σστ='+Sst.toFixed(0)+'<br>'+
+'<span style="color:#64748b;font-size:.85em">Envolvente: τ = '+cRep.toFixed(1)+' + σ·'+tanphi.toFixed(4)+'</span>';
+});
+})();
+</script>
+
+<h2>Ejemplo de cálculo</h2>
+<table class="ejemplo">
+<caption>Datos de entrada — corte directo en arena limosa SM, terraplén Los Ángeles</caption>
+<thead><tr><th>σn (kPa)</th><th>τpico (kPa)</th><th>τresidual (kPa)</th></tr></thead>
+<tbody>
+<tr><td>50</td><td>46</td><td>32</td></tr>
+<tr><td>100</td><td>76</td><td>61</td></tr>
+<tr><td>200</td><td>138</td><td>121</td></tr>
+<tr><td>300</td><td>198</td><td>181</td></tr>
+</tbody>
+</table>
+<p>Cálculo para envolvente pico con 4 puntos: Σσn = 650, Στ = 458, Σσn² = 140.000, Σ(σn·τ) = 100.600. tan φ = (4·100.600 − 650·458)/(4·140.000 − 650²) = (402.400 − 297.700)/(560.000 − 422.500) = 104.700/137.500 = 0,7614. φ = arctan 0,7614 = 37,3°. c = (458 − 0,7614·650)/4 = (458 − 495)/4 = −9,25 kPa. Como c resulta negativa (pequeña), se interpreta como arena sin cohesión real y se reporta c = 0, φ = 37,3° (práctica estándar ASTM). Envolvente residual: Σσn = 650, Στr = 395, Σσn·τr = 87.350. tan φr = (4·87.350 − 650·395)/137.500 = (349.400 − 256.750)/137.500 = 92.650/137.500 = 0,6738. φr = 33,9°, cr ≈ 0. R² pico = 0,999 (muy bueno). Pérdida por rotura: Δφ = 37,3 − 33,9 = 3,4°, comportamiento típico de arena limosa densa.</p>
+<p class="resultado"><strong>Resultado:</strong> Pico: c = 0, φ = 37,3° · Residual: cr = 0, φr = 33,9° · R² = 0,999.</p>
+
+<h2>Interpretación de resultados</h2>
+<p>Los parámetros pico (c = 0, φ = 37,3°) corresponden a una arena limosa densa en estado inalterado y son los adecuados para diseño de fundaciones nuevas en terreno virgen. Los residuales (φ = 33,9°) se aplican a taludes con historia de movimiento, rellenos compactados reconsolidando, o análisis post-falla. Diferencia pico-residual de 3° es moderada; en arcillas sensibles o suelos loesicos la diferencia puede superar 20° y la estabilidad de largo plazo requiere parámetros residuales obligatoriamente.</p>
+
+<h2>Normativas de referencia</h2>
+<ul>
+<li>ASTM D3080 — Standard Test Method for Direct Shear Test of Soils Under Consolidated Drained Conditions</li>
+<li>ASTM D6528 — Consolidated Undrained Direct Simple Shear Testing</li>
+<li>Skempton, A.W. (1964). Long-term stability of clay slopes — parámetros residuales</li>
+<li>NCh 1517/3 — Granulometría (preparación muestras)</li>
+<li>ISRM — Suggested methods for direct shear testing of discontinuities</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Cuándo uso pico y cuándo residual?</summary><p>Pico: diseño de estructuras nuevas, fundaciones, taludes excavados en terreno virgen. Residual: análisis de taludes con deslizamiento previo (reactivación), presas con problemas de estabilidad detectados, retroanálisis de fallas. Si hay duda se usa residual (conservador).</p></details>
+<details><summary>¿Por qué corte directo vs triaxial?</summary><p>Corte directo es rápido y barato pero impone plano de falla y no mide u. Triaxial CU en arcilla saturada mide u y permite obtener c' y φ' efectivos separados de los totales. En arenas limpias ambos dan resultados similares; en arcillas triaxial es más preciso.</p></details>
+<details><summary>¿Qué velocidad de corte uso?</summary><p>Para arenas 0,5-1,0 mm/min. Para limos 0,1-0,3 mm/min. Para arcillas 0,005-0,05 mm/min (drenado completo). ASTM D3080 especifica t50 del edómetro × 20-50 para estimar velocidad mínima. Velocidad muy alta subestima c en arcillas por generación de u sin disipación.</p></details>
+<details><summary>¿Caja cuadrada o circular?</summary><p>Cuadrada es la estándar ASTM (60×60 mm o 100×100 mm). Circular (63,5 mm) usada en equipos antiguos; se asume misma área. Para muestras con partículas gruesas se usa caja 100×100 mm para minimizar efecto de tamaño. Nunca partículas &gt; 1/10 del lado de caja.</p></details>
+
+<h2>Calculadoras relacionadas</h2>
+<ul>
+<li><a href="/herramientas-geotecnicas/empujes-muros/">Empujes de Rankine</a></li>
+<li><a href="/herramientas-geotecnicas/capacidad-portante/capacidad-portante-terzaghi-vesic.html">Capacidad portante Terzaghi/Vesic</a></li>
+<li><a href="/herramientas-geotecnicas/taludes-roca.html">Bishop simplificado</a></li>
+<li><a href="/herramientas-geotecnicas/clasificacion-suelos/">Límites de Atterberg</a></li>
+</ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "SoftwareApplication", "name": "Calculadora Corte Directo", "applicationCategory": "EngineeringApplication", "operatingSystem": "Web", "description": "Cohesión c y ángulo φ por regresión Mohr-Coulomb del corte directo ASTM D3080. Calculadora gratuita de Mecánica de Suelos.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CLP"}},
+    {"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "¿Pico o residual?", "acceptedAnswer": {"@type": "Answer", "text": "Pico en diseño nuevo; residual en taludes con historia de movimiento o retroanálisis."}},
+      {"@type": "Question", "name": "¿Corte directo vs triaxial?", "acceptedAnswer": {"@type": "Answer", "text": "Triaxial mide u y separa c', φ'; corte directo más rápido y adecuado para arenas."}},
+      {"@type": "Question", "name": "¿Velocidad de corte?", "acceptedAnswer": {"@type": "Answer", "text": "Arenas 0,5-1 mm/min; limos 0,1-0,3; arcillas 0,005-0,05 drenado completo."}},
+      {"@type": "Question", "name": "¿Caja cuadrada o circular?", "acceptedAnswer": {"@type": "Answer", "text": "Cuadrada 60×60 o 100×100 mm estándar ASTM; partículas < 1/10 del lado."}}
+    ]},
+    {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Herramientas geotécnicas", "item": "https://ingeotecnia.net/herramientas-geotecnicas"},
+        {"@type": "ListItem", "position": 3, "name": "Ensayos in situ y laboratorio", "item": "https://ingeotecnia.net/herramientas-geotecnicas/ensayos"},
+        {"@type": "ListItem", "position": 4, "name": "Corte directo", "item": "https://ingeotecnia.net/herramientas-geotecnicas/ensayos/corte-directo"}
+      ]}
+  ]
+}
+</script>
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Ensayos In Situ</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+      <li><a href="/herramientas-geotecnicas/ensayos/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Banda Granulométrica — Bases y Subbases MOP</a></li>
+      <li><a href="/herramientas-geotecnicas/ensayos/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora CPT — Correlaciones qc, fs, u2 a parámetros geotécnicos</a></li>
+      <li><a href="/herramientas-geotecnicas/ensayos/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora DPSH / DPL — Correlación con SPT, φ y Dr</a></li>
+      <li><a href="/herramientas-geotecnicas/ensayos/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Equivalente de Arena — EA</a></li>
+  </ul>
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+    Más herramientas en <a href="/herramientas-geotecnicas/ensayos" style="color:#0d9488">Ensayos In Situ</a> · Volver al
+    <a href="/herramientas-geotecnicas" style="color:#0d9488">índice de Mecánica de Suelos</a>
+  </p>
+</aside>
+
+<footer class="seo-footer" style="background:#0f2747;color:#fff;padding:32px 24px;margin-top:48px;font-family:'Inter',sans-serif">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;font-size:13px;line-height:1.7">
+    <p style="margin-bottom:14px"><a href="/" style="color:#fff;font-weight:700;font-size:15px;text-decoration:none">Geotechnical Engineering Intelligence Platform</a></p>
+    <p style="opacity:.85;margin-bottom:18px">Plataforma SaaS con IA para ingenieros geotécnicos · 47 calculadoras gratuitas · Módulo de terreno permanente</p>
+    <nav style="margin-bottom:14px">
+      <a href="/" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Inicio</a> ·
+      <a href="/herramientas-geotecnicas" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Herramientas</a> ·
+      Privacidad ·
+      Términos ·
+      <a href="mailto:contacto@ingeotecnia.net" style="color:#fff;opacity:.8;margin:0 10px;text-decoration:none">Contacto</a>
+    </nav>
+    <p style="font-size:11px;opacity:.6">&copy; 2026 IngeoTecnia · Estudios Geotécnicos Chile · Calculadora gratuita para uso profesional con criterio del ingeniero firmante</p>
+  </div>
+</footer>
+
+</body>
+</html>
