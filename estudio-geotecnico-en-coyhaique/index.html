@@ -20,7 +20,7 @@
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css"></noscript></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "IngeoTecnia Coyhaique", "description": "Consultoría geotécnica en Coyhaique: estudios de mecánica de suelos, sondajes SPT y estabilidad de taludes. Cumplimiento normativo NCh433, NCh1508. Cotiza tu proyecto.", "url": "https://ingeotecnia.net/estudio-geotecnico-en-coyhaique/", "areaServed": {"@type": "City", "name": "Coyhaique"}, "address": {"@type": "PostalAddress", "addressLocality": "Coyhaique", "addressCountry": "Chile"}, "email": "contacto@ingeotecnia.net", "priceRange": "$$", "geo": {"@type": "GeoCoordinates", "latitude": -45.5752, "longitude": -72.0662}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Consultoría Geotécnica en Coyhaique", "url": "https://ingeotecnia.net/estudio-geotecnico-en-coyhaique/", "description": "Consultoría geotécnica en Coyhaique: estudios de mecánica de suelos, sondajes SPT y estabilidad de taludes. Cumplimiento normativo NCh433, NCh1508. Cotiza tu proyecto.", "inLanguage": "es", "datePublished": "2026-05-27", "dateModified": "2026-05-27", "isPartOf": {"@type": "WebSite", "url": "https://ingeotecnia.net/", "name": "IngeoTecnia"}, "breadcrumb": {"@id": "https://ingeotecnia.net/estudio-geotecnico-en-coyhaique/#breadcrumb"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"}, {"@type": "ListItem", "position": 2, "name": "Coyhaique", "item": "https://ingeotecnia.net/estudio-geotecnico-en-coyhaique/"}], "@id": "https://ingeotecnia.net/estudio-geotecnico-en-coyhaique/#breadcrumb"}</script>
@@ -40,8 +40,8 @@
   --text:#111827;
   --border:#e5e7eb;
   --muted:#64748b;
-  --font-body:'Source Sans 3',-apple-system,sans-serif;
-  --font-h:'Source Serif 4',Georgia,serif;
+  --font-body:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --font-h:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -234,77 +234,7 @@ main img:not([class]){max-width:100%;height:auto}
 @media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
 </style>
 <link rel="preload" as="image" href="../img/mecanica-suelos-1.webp" fetchpriority="high">
-<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><link rel="preload" href="fonts/source-sans-3-400-latin.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high"><style>@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/source-sans-3-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/source-sans-3-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-sans-3-600-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-sans-3-600-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-sans-3-700-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-sans-3-700-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-serif-4-600-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-serif-4-600-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-serif-4-700-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-serif-4-700-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}</style></head>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><style></style></head>
 <body>
 <header>
 <div class="container">
@@ -345,7 +275,7 @@ main img:not([class]){max-width:100%;height:auto}
 <section class="block">
 
 
-<div class="hero-img-wrap"><img src="../img/mecanica-suelos-1.webp?v2.1779915894" alt="Estudio Geotecnico en Coyhaique - servicio sede zona Sur" width="600" height="400" loading="eager" fetchpriority="high" decoding="async"></div>
+<div class="hero-img-wrap"><img src="../img/mecanica-suelos-1.webp?v2.1779915894" alt="Estudio Geotecnico en Coyhaique - servicio sede zona Sur" width="500" height="281" loading="eager" fetchpriority="high" decoding="async"></div>
 
 Un error frecuente entre las constructoras que operan en Coyhaique es asumir que los suelos de la Patagonia se comportan de manera homogénea. La geología local, dominada por depósitos glaciofluviales y morrénicos, presenta una variabilidad que puede comprometer la cimentación si no se caracteriza adecuadamente. En IngeoTecnia ofrecemos consultoría geotécnica en Coyhaique respaldada por un laboratorio de mecánica de suelos acreditado y equipos de sondaje SPT. Nuestra experiencia en la región nos permite anticipar condiciones de terreno como estratos erráticos, niveles freáticos someros y alta sismicidad, integrando normativa chilena (NCh433, NCh1508) para entregar recomendaciones de fundación seguras y eficientes.
 </section>
@@ -423,7 +353,7 @@ Un error frecuente entre las constructoras que operan en Coyhaique es asumir que
 <section class="block map">
 <h2>Cobertura — Coyhaique</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/js/leaflet-6c9a.js" defer></script>
 <script>
 (function(){
   var el=document.getElementById('mapa-ciudad');

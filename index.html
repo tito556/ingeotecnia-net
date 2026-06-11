@@ -40,8 +40,8 @@
   --text:#111827;
   --border:#e5e7eb;
   --muted:#64748b;
-  --font-body:'Source Sans 3',-apple-system,sans-serif;
-  --font-h:'Source Serif 4',Georgia,serif;
+  --font-body:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --font-h:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -204,8 +204,8 @@ footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;fon
 </style>
 
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css"></noscript></noscript>
+<script src="/js/leaflet-6c9a.js" defer></script>
 
 <style id="cta-center-fix">
 .cta-block,section.block.cta-block{margin:32px auto!important;max-width:760px!important;text-align:center!important}
@@ -218,77 +218,7 @@ footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;fon
 @media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
 </style>
 <link rel="preload" as="image" href="img/team_cl_ingeo_calicata_solo.webp" fetchpriority="high">
-<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><link rel="preload" href="fonts/source-sans-3-400-latin.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high"><style>@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/source-sans-3-400-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/source-sans-3-400-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-sans-3-600-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-sans-3-600-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-sans-3-700-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Sans 3';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-sans-3-700-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-serif-4-600-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/source-serif-4-600-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-serif-4-700-latin-ext.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}@font-face {
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/source-serif-4-700-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}</style></head>
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><style></style></head>
 <body>
 <header>
 <div class="container">
@@ -353,7 +283,7 @@ footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;fon
 <section class="block">
 
 
-<div class="hero-img-wrap"><img src="img/team_cl_ingeo_calicata_solo.webp" alt="IngeoTecnia - Estudio Geotecnico en Chile - cobertura nacional" width="600" height="400" loading="eager" fetchpriority="high" decoding="async"></div>
+<div class="hero-img-wrap"><img src="img/team_cl_ingeo_calicata_solo.webp" alt="IngeoTecnia - Estudio Geotecnico en Chile - cobertura nacional" width="500" height="281" loading="eager" fetchpriority="high" decoding="async"></div>
 En el contexto chileno, muchas veces vemos que proyectos de mediana envergadura subestiman la variabilidad de los depósitos fluvioglaciares del valle. Nuestra firma, con laboratorio acreditado y más de 15 años de experiencia, ofrece <a href="/estudio-geotecnico-en-santiago/">estudios geotécnicos en la región central</a> y a nivel nacional. Desde sondajes SPT hasta ensayos de laboratorio, nuestro equipo técnico asegura parámetros representativos para cada proyecto.
 </section>
 
