@@ -251,8 +251,7 @@ footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;fon
 <div class="container">
 <div class="mag-layout">
 <main>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   function initMapaSuelos(){
     if(typeof L === 'undefined') return setTimeout(initMapaSuelos, 200);
     var el = document.getElementById('mapa-suelos');
@@ -276,7 +275,7 @@ footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;fon
     initMapaSuelos();
   }
 })();
-</script>
+});</script>
 
 
 

@@ -354,8 +354,7 @@ Un error frecuente entre las constructoras que operan en Coyhaique es asumir que
 <h2>Cobertura — Coyhaique</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([-45.5752,-72.0662],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -369,7 +368,7 @@ Un error frecuente entre las constructoras que operan en Coyhaique es asumir que
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 <div class="cierre">En IngeoTecnia ponemos a disposición nuestra experiencia en consultoría geotécnica en Coyhaique para garantizar fundaciones seguras y eficientes. Para proyectos en la capital, consulte nuestros <a href="/estudio-geotecnico-en-concepcion/">servicios de consultoría geotécnica desde Concepción</a>.</div>

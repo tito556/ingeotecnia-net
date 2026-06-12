@@ -324,8 +324,7 @@ Mientras la Cordillera de los Andes impone condiciones extremas en el oriente de
 <h2>Cobertura — Chile</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([-33.45,-70.65],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -339,7 +338,7 @@ Mientras la Cordillera de los Andes impone condiciones extremas en el oriente de
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 <div class="cierre">IngeoTecnia ejecuta sondajes SPT en Santiago, Antofagasta y todo Chile, con equipos mecánicos y personal certificado. Para proyectos que requieran caracterización precisa del subsuelo, nuestro equipo técnico está disponible para asesorar. Consulte con el ingeniero responsable <a href="/equipo/juan-carlos-vargas/">Juan Carlos Vargas</a>.</div>

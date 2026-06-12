@@ -557,8 +557,7 @@ En Santiago, muchas veces vemos que los proyectos se topan con sorpresas geotéc
 <link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/leaflet-6c9a.css"></noscript></noscript>
 <div id="ingeo-coverage-map" style="height:540px;width:100%;border-radius:12px;border:1px solid var(--border);max-width:980px;margin:0 auto"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el = document.getElementById('ingeo-coverage-map');
   if (!el || !window.L || !window.IntersectionObserver) return;
   var loaded = false;
@@ -611,7 +610,7 @@ En Santiago, muchas veces vemos que los proyectos se topan con sorpresas geotéc
     });
   },{rootMargin:'200px'}).observe(el);
 })();
-</script>
+});</script>
 </section>
 
 

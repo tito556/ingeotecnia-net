@@ -352,8 +352,7 @@ La zona costera de Coquimbo se caracteriza por depósitos de gravas arenosas y a
 <h2>Cobertura — Coquimbo</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([-29.9533,-71.3436],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -367,7 +366,7 @@ La zona costera de Coquimbo se caracteriza por depósitos de gravas arenosas y a
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 <div class="cierre">En IngeoTecnia ofrecemos consultoría geotécnica en Coquimbo con equipos especializados y metodología conforme a normativa chilena. Contacte a nuestro equipo para evaluar las condiciones de su proyecto y obtener soluciones técnicas seguras y eficientes.</div>

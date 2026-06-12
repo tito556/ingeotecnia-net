@@ -360,8 +360,7 @@ La Norma Chilena NCh433.Of2012, que fija los requisitos de diseño sísmico para
 <h2>Cobertura — Puerto Varas</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([-41.3196,-72.9856],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -375,7 +374,7 @@ La Norma Chilena NCh433.Of2012, que fija los requisitos de diseño sísmico para
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 <div class="cierre">En IngeoTecnia ofrecemos consultoría geotécnica en Puerto Varas con base en normativa chilena y conocimiento local. Nuestro equipo está preparado para abordar proyectos residenciales, comerciales e industriales. Para intervenciones de mayor envergadura, complementamos con nuestra red nacional desde <a href="/estudio-geotecnico-en-concepcion/">consultoría geotécnica en Concepción</a>.</div>

@@ -354,8 +354,7 @@ La humedad costera de Chiloé y las condiciones geológicas de Ancud, con suelos
 <h2>Cobertura — Ancud</h2>
 <div id="mapa-ciudad" style="width:100%;height:340px"></div>
 <script src="/js/leaflet-6c9a.js" defer></script>
-<script>
-(function(){
+<script>document.addEventListener('DOMContentLoaded',function(){/*lf-defer-fix*/(function(){
   var el=document.getElementById('mapa-ciudad');
   var map=L.map(el,{scrollWheelZoom:false}).setView([-41.8696,-73.8203],12);
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
@@ -369,7 +368,7 @@ La humedad costera de Chiloé y las condiciones geológicas de Ancud, con suelos
   window.addEventListener('resize',_fixSize);
   if(window.ResizeObserver){ new ResizeObserver(_fixSize).observe(el); }
 })();
-</script>
+});</script>
 </section>
 
 <div class="cierre">Para su proyecto en Ancud, nuestro equipo integra conocimiento local y normativa nacional. Complementamos nuestra labor con <a href="/estudio-geotecnico-en-concepcion/">consultoría geotécnica en Concepción</a>, asegurando cobertura técnica multirregional.</div>
