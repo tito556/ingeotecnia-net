@@ -1,298 +1,148 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Geofísica MASW · Vs30 sísmico y caracterización de suelos</title>
-
+<title>Geofísica MASW · Vs30 sísmico y caracterización de suelos</title><link rel="preload" as="image" href="img/team_cl_ingeo_calicata_solo.webp" fetchpriority="high">
 <meta name="description" content="Estudios de geofísica MASW (Multichannel Analysis of Surface Waves) para Vs30, perfil sísmico del suelo y módulo de corte. Norma NCh433 y ASTM D7400.">
-
 <meta name="theme-color" content="#1f2937">
-
 <link rel="canonical" href="https://ingeotecnia.net/geofisica-masw/">
-
 <meta property="og:type" content="website">
-
 <meta property="og:title" content="Geofísica MASW · IngeoTecnia">
-
 <meta property="og:description" content="Caracterización geofísica con MASW para Vs30 sísmico bajo NCh433 y ASTM D7400.">
-
 <meta property="og:url" content="https://ingeotecnia.net/geofisica-masw/">
-
-
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 
 
-
-
-
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "@id": "https://ingeotecnia.net/geofisica-masw/#service", "name": "Geofísica MASW", "serviceType": "Multichannel Analysis of Surface Waves (MASW)", "category": "Geophysical investigation", "description": "Caracterización geofísica con MASW para perfil Vs30 sísmico, espesor de capas y módulo de corte", "url": "https://ingeotecnia.net/geofisica-masw/", "provider": {"@type": "Organization", "@id": "https://ingeotecnia.net/#organization", "name": "IngeoTecnia", "url": "https://ingeotecnia.net/", "email": "contacto@ingeotecnia.net"}, "areaServed": [{"@type": "City", "name": "Santiago"}, {"@type": "City", "name": "Antofagasta"}, {"@type": "City", "name": "Arica"}, {"@type": "City", "name": "Iquique"}, {"@type": "City", "name": "Calama"}, {"@type": "City", "name": "Copiapo"}, {"@type": "City", "name": "La Serena"}, {"@type": "City", "name": "Coquimbo"}, {"@type": "City", "name": "Valparaiso"}, {"@type": "City", "name": "Vina Del Mar"}, {"@type": "City", "name": "Rancagua"}, {"@type": "City", "name": "Talca"}, {"@type": "City", "name": "Curico"}, {"@type": "City", "name": "Linares"}, {"@type": "City", "name": "Chillan"}, {"@type": "City", "name": "Concepcion"}, {"@type": "City", "name": "Temuco"}, {"@type": "City", "name": "Valdivia"}, {"@type": "City", "name": "Osorno"}, {"@type": "City", "name": "Puerto Montt"}, {"@type": "City", "name": "Puerto Varas"}, {"@type": "City", "name": "Pucon"}, {"@type": "City", "name": "Villarrica"}, {"@type": "City", "name": "Ancud"}, {"@type": "City", "name": "Coyhaique"}, {"@type": "City", "name": "Machali"}, {"@type": "City", "name": "Los Andes"}, {"@type": "City", "name": "Villa Alemana"}, {"@type": "City", "name": "Penaflor"}, {"@type": "City", "name": "Alto Hospicio"}, {"@type": "City", "name": "Vallenar"}, {"@type": "City", "name": "Padre Las Casas"}, {"@type": "City", "name": "Llanquihue"}, {"@type": "City", "name": "Los Angeles Bb"}]}</script>
-
 <style>
-
-:root{--primary:#1f2937;--accent:#6366f1;--bg:#f9fafb;--surface:#fff;--text:#111827;--border:#e5e7eb;--muted:#64748b;--font-body:'Source Sans 3',-apple-system,sans-serif;--font-h:'Source Serif 4',Georgia,serif}
-
-*{box-sizing:border-box;margin:0;padding:0}
-
+:root{--primary:#1f2937;--accent:#6366f1;--bg:#f9fafb;--surface:#fff;--text:#111827;--border:#e5e7eb;--muted:#64748b;--font-body:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;--font-h:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;margin:0;padding:0}
 body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
-
 a{color:var(--accent);text-decoration:underline}
-
 .container{max-width:1100px;margin:0 auto;padding:0 24px}
-
 header{background:var(--primary);color:#fff;padding:18px 0}
-
 header .container{display:flex;align-items:center;justify-content:space-between}
-
 header a{color:#fff;text-decoration:none}
-
 header .brand{font-family:var(--font-h);font-size:1.2rem;font-weight:700}
-
 header nav{display:flex;gap:16px;font-size:.92rem}
-
 .hero{background:linear-gradient(135deg,#1f2937,#374151);color:#fff;padding:60px 0 40px}
-
 .hero h1{font-family:var(--font-h);font-size:2.2rem;margin-bottom:12px}
-
 .hero p{color:#cbd5e1;max-width:700px}
-
 main{padding:40px 0 60px}
-
 main h2{font-family:var(--font-h);font-size:1.5rem;color:var(--primary);margin:28px 0 14px;border-bottom:2px solid var(--accent);padding-bottom:6px;display:inline-block}
-
 main p{margin-bottom:14px}
-
 table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:20px 0}
-
 td,th{padding:10px 14px;border-bottom:1px solid var(--border);text-align:left}
-
 th{background:var(--primary);color:#fff}
-
 footer{background:#0f172a;color:#cbd5e1;padding:28px 0;font-size:.88rem;margin-top:40px}
-
 footer a{color:#fff}
-
 </style>
-
-
-
-
-
-
 
 
 
 
 
 <style id="hero-img-cap-v3">
-
 section.block{overflow:auto}
-
 section.block .hero-img-wrap{float:right!important;max-width:340px!important;width:340px!important;max-height:280px!important;margin:6px 0 16px 24px!important;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block!important}
-
 section.block .hero-img-wrap img{max-width:100%!important;max-height:280px!important;width:100%!important;height:280px!important;object-fit:cover!important;display:block!important;border-radius:10px}
-
 .inline-img{float:right!important;max-width:300px!important;width:300px!important;max-height:220px!important;margin:6px 0 18px 20px!important;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
-
 .inline-img img{max-width:100%!important;max-height:220px!important;width:100%!important;height:220px!important;object-fit:cover!important;display:block!important;border-radius:10px}
-
 section.block h2{clear:both;margin-top:0}
-
 @media (max-width:768px){
-
   section.block{overflow:visible}
-
   section.block .hero-img-wrap{float:none!important;width:100%!important;max-width:100%!important;max-height:240px!important;margin:18px auto!important}
-
   section.block .hero-img-wrap img{height:240px!important;max-height:240px!important}
-
   .inline-img{float:none!important;width:100%!important;max-width:100%!important;max-height:220px!important;margin:18px auto!important}
-
 }
-
 main img:not([class]){max-width:100%;height:auto}
-
 </style>
-
 <meta name="layout" content="L2">
 
 
-
-
-
 <style id="ben-grid-reorder-fix-v1">
-
 /* Reorder fix: solo intro full + metodologia/tabla 2-col, resto full width */
-
 .ben-layout main > section.block{grid-column:span 12!important}
-
 .ben-layout main > section.block:nth-of-type(1){grid-column:span 12!important}
-
 .ben-layout main > section.block:nth-of-type(2){grid-column:span 7!important}
-
 .ben-layout main > section.block:nth-of-type(3){grid-column:span 5!important}
-
 @media(max-width:920px){.ben-layout main > section.block{grid-column:1/-1!important}}
-
 </style>
-
-<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><link rel="preload" href="fonts/source-sans-3-400-latin.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high"><style></style><style id="selfhost-fonts">body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style></head>
-
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><style></style></head>
 <body>
-
 <header>
-
 <div class="container">
-
 <a href="/" class="brand">IngeoTecnia</a>
-
 <nav><a href="/">Inicio</a><span>Sismos</span></nav>
-
 </div>
-
 </header>
-
 <section class="hero">
-
 <div class="container">
-
 <div style="font-size:.85rem;color:#cbd5e1;margin-bottom:16px"><a href="/" style="color:#fff;text-decoration:underline">Inicio</a> › <span>Geofísica MASW</span></div>
-
 <h1>Geofísica MASW para Vs30 sísmico</h1>
-
 <p>Caracterización geofísica con análisis multicanal de ondas superficiales (MASW). Determinación del perfil de velocidad de onda de corte Vs30, clasificación sísmica del suelo bajo NCh433 y dimensionamiento de cimentaciones.</p>
-
 </div>
-
 </section>
-
 <main>
 
-
-
 <div class="container">
-
-
 
 <h2>¿Qué es MASW?</h2>
-
 <p>MASW (Multichannel Analysis of Surface Waves) es un método geofísico no destructivo que mide la velocidad de propagación de ondas Rayleigh en el suelo. A partir del análisis dispersivo se obtiene un perfil 1D o 2D de velocidad de onda de corte Vs, parámetro clave para el diseño sísmico de cimentaciones según NCh433.Of2012.</p>
 
-
-
 <h2>Cuándo aplicar MASW</h2>
-
 <ul style="margin:8px 0 16px 24px">
-
 <li>Clasificación del terreno (Tipo A, B, C, D, E, F) según Vs30 — exigencia NCh433.</li>
-
 <li>Identificación de estratos blandos a profundidad inalcanzable con SPT.</li>
-
 <li>Evaluación de módulo de corte G₀ para análisis dinámico.</li>
-
 <li>Caracterización pre-licuación en arenas saturadas.</li>
-
 <li>Investigación complementaria a sondajes tradicionales.</li>
-
 </ul>
 
-
-
 <h2>Parámetros técnicos típicos</h2>
-
 <table>
-
 <thead><tr><th>Parámetro</th><th>Rango habitual</th></tr></thead>
-
 <tbody>
-
 <tr><td>Profundidad de investigación</td><td>10 - 40 m</td></tr>
-
 <tr><td>Resolución vertical</td><td>0.5 - 2 m</td></tr>
-
 <tr><td>Longitud de línea sísmica</td><td>24 - 96 m</td></tr>
-
 <tr><td>Fuente de excitación</td><td>Martillo + placa o caída de peso</td></tr>
-
 <tr><td>Geófonos</td><td>4.5 Hz vertical (24 a 48 canales)</td></tr>
-
 <tr><td>Norma de referencia</td><td>ASTM D7400, NCh433</td></tr>
-
 </tbody>
-
 </table>
-
-
 
 <h2>Clasificación sísmica del suelo (NCh433)</h2>
-
 <table>
-
 <thead><tr><th>Tipo</th><th>Vs30 (m/s)</th><th>Descripción</th></tr></thead>
-
 <tbody>
-
 <tr><td>A</td><td>Vs30 ≥ 900</td><td>Roca</td></tr>
-
 <tr><td>B</td><td>500 ≤ Vs30 &lt; 900</td><td>Roca blanda / suelo cementado</td></tr>
-
 <tr><td>C</td><td>350 ≤ Vs30 &lt; 500</td><td>Suelo denso / grava</td></tr>
-
 <tr><td>D</td><td>180 ≤ Vs30 &lt; 350</td><td>Suelo rígido</td></tr>
-
 <tr><td>E</td><td>Vs30 &lt; 180</td><td>Suelo blando</td></tr>
-
 <tr><td>F</td><td>Requiere análisis especial</td><td>Suelos colapsables, licuables, orgánicos</td></tr>
-
 </tbody>
-
 </table>
 
-
-
 <h2>Preguntas frecuentes</h2>
-
 <details><summary>¿En qué se diferencia MASW de un sondaje SPT?</summary><p>MASW mide propiedades dinámicas (Vs) sin perforación; SPT mide resistencia mecánica con perforación. Son complementarios: SPT entrega muestras y resistencia; MASW entrega perfil sísmico continuo.</p></details>
-
 <details><summary>¿MASW reemplaza el sondaje?</summary><p>No reemplaza, complementa. Las normas requieren caracterización física (sondajes/calicatas) más caracterización sísmica (Vs30). MASW satisface la segunda exigencia sin perforar.</p></details>
-
 <details><summary>¿Cuánto cuesta un estudio MASW en Chile?</summary><p>El precio referencial está entre $400.000 - $700.000 CLP (sin IVA) por línea sísmica de 24-48 canales. El valor depende de longitud de línea, accesibilidad y entregables (perfil 1D simple vs 2D tomográfico).</p></details>
 
-
-
 <div style="background:var(--primary);color:#fff;padding:32px;border-radius:12px;text-align:center;margin:32px 0">
-
 <h3 style="color:#fff;margin-bottom:8px;font-family:var(--font-h);font-size:1.3rem">¿Necesita un estudio MASW?</h3>
-
 <p>Evaluamos su proyecto y entregamos perfil Vs30 firmado bajo NCh433.</p>
-
-<a href="/cdn-cgi/l/email-protection#1d7e7273697c7e69725d74737a787269787e73747c33737869226e687f77787e6920586e6968797472382f2d505c4e4a" style="display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;margin-top:16px">Solicitar cotización</a>
-
+<a href="mailto:contacto@ingeotecnia.net?subject=Estudio%20MASW" style="display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;margin-top:16px">Solicitar cotización</a>
 </div>
 
-
-
 </div>
-
 </main>
-
 <footer>
-
 <div class="container">
-
 <p>&copy; 2026 IngeoTecnia · <a href="/">Inicio</a> · <span>Blog sísmico</span></p>
-
 </div>
-
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-
+</body>
 </html>
-
