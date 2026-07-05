@@ -1,285 +1,570 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ensayo de laboratorio para estabilización de suelos en Concepción</title><link rel="preload" as="image" href="img/team_cl_ingeo_calicata_solo.webp" fetchpriority="high">
+
+<title>Ensayo de laboratorio para estabilización de suelos en Concepción</title>
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon.png"><link rel="apple-touch-icon" href="/img/favicon.svg">
+
 <meta name="description" content="Evaluación de estabilización con cal para subrasante de pavimento industrial en Concepción.">
+
 <meta name="theme-color" content="#1f2937">
+
 <link rel="canonical" href="https://ingeotecnia.net/proyectos/ensayo-laboratorio-estabilizacion-suelos-concepcion/">
+
 <meta property="og:type" content="article">
+
 <meta property="og:title" content="Ensayo de laboratorio para estabilización de suelos en Concepción">
+
 <meta property="og:description" content="Evaluación de estabilización con cal para subrasante de pavimento industrial en Concepción.">
+
 <meta property="og:url" content="https://ingeotecnia.net/proyectos/ensayo-laboratorio-estabilizacion-suelos-concepcion/">
+
 <meta property="og:site_name" content="IngeoTecnia · Geotecnia">
 
+
+
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Ensayo de laboratorio para estabilización de suelos en Concepción", "description": "Evaluación de estabilización con cal para subrasante de pavimento industrial en Concepción.", "url": "https://ingeotecnia.net/proyectos/ensayo-laboratorio-estabilizacion-suelos-concepcion/", "datePublished": "2023-01-01", "author": {"@type": "Organization", "name": "IngeoTecnia", "url": "https://ingeotecnia.net/"}, "locationCreated": {"@type": "Place", "name": "Concepción"}, "about": {"@type": "Service", "name": "Laboratorio de Mecánica de Suelos", "url": "https://ingeotecnia.net/laboratorio-de-mecanica-de-suelos/"}}</script>
+
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "@id": "https://ingeotecnia.net/proyectos/ensayo-laboratorio-estabilizacion-suelos-concepcion/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ingeotecnia.net/"}, {"@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://ingeotecnia.net/proyectos/"}, {"@type": "ListItem", "position": 3, "name": "Ensayo de laboratorio para estabilización de suelos en Concepción", "item": "https://ingeotecnia.net/proyectos/ensayo-laboratorio-estabilizacion-suelos-concepcion/"}]}</script>
+
 <style>
 
+
+
 :root{
+
   --primary:#1f2937;
+
   --accent:#6366f1;
+
   --bg:#f9fafb;
+
   --surface:#fff;
+
   --text:#111827;
+
   --border:#e5e7eb;
+
   --muted:#64748b;
-  --font-body:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  --font-h:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+
+  --font-body:inherit;
+
+  --font-h:inherit;
+
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
+
 html{scroll-behavior:smooth}
+
 body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
+
 a{color:var(--primary);text-decoration:none}
+
 a:hover{text-decoration:underline}
+
 main section.block p a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;font-weight:500}
+
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
+
 header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+
 header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+
 header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+
 header .brand-link:hover{text-decoration:none}
+
 header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
+
 header .brand-name{font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
+
 header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
+
 header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+
 header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+
 header .nav-link:hover{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+
 header .nav-dd{position:relative}
+
 header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
+
 header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
+
 header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:220px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
+
 header .nav-dd.open .dd-menu{display:block}
+
 header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
+
 header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
+
 header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
+
 @media(max-width:780px){
+
   header .container{flex-wrap:wrap}
+
   header .nav-burger{display:inline-block}
+
   header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
+
   body.nav-open header .navbar{display:flex}
+
   header .nav-dd{width:100%}
+
   header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
+
   header .dd-menu a{color:#e2e8f0;padding:8px 18px}
+
 }
+
 .hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 44px}
+
 .hero h1{font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:10px;max-width:700px}
+
 .hero p.subtitle{font-size:1.02rem;color:#cbd5e1;max-width:600px;margin-bottom:14px}
+
 .breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1}
+
 .breadcrumb a{color:#93c5fd;text-decoration:none}
+
 .breadcrumb a:hover{color:#fff}
+
 .breadcrumb span{color:#fff;font-weight:500}
+
 .block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border)}
+
 h2{font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+
 h3{font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
+
 p{margin-bottom:12px;color:var(--text)}
+
 footer{background:var(--primary);color:#cbd5e1;padding:36px 0 24px;margin-top:48px}
+
 footer .container{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;align-items:start}
+
 footer h4{color:#fff;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;font-weight:600}
+
 footer a{color:#93c5fd;text-decoration:none;font-size:.9rem}
+
 footer a:hover{text-decoration:underline}
+
 footer p{font-size:.88rem;margin-bottom:6px}
+
 .copyr{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.1);margin-top:24px;padding-top:16px;font-size:.8rem;text-align:center;color:#64748b}
+
 @media(max-width:700px){footer .container{grid-template-columns:1fr}}
+
 .cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:24px 0!important}
+
 .cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important}
+
 .cta-block p{color:#e2e8f0!important;margin-bottom:18px!important}
+
 .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+
 .cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;background:#fff;color:var(--primary);transition:transform .12s,box-shadow .12s}
+
 .cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
+
 .cta-email-note{font-size:.85rem;color:#cbd5e1!important;margin-top:8px!important;margin-bottom:0!important}
+
 .cta-email-note a{color:#93c5fd}
 
 
+
+
+
 .project-meta-table{width:100%;border-collapse:collapse;margin:0 0 20px}
+
 .project-meta-table td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:.93rem}
+
 .project-meta-table td:first-child{font-weight:600;color:var(--primary);width:140px;background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
+
 .project-section{margin-bottom:24px}
+
 .project-section h3{font-size:1.08rem;font-weight:700;color:var(--primary);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+
 .project-section p{color:var(--text);line-height:1.7;margin:0}
+
 .project-result{background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border-left:4px solid var(--accent);padding:16px 22px;border-radius:0 8px 8px 0;font-style:italic;color:var(--text);line-height:1.6;margin-top:4px}
+
 .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.88rem;text-decoration:none;margin-bottom:14px}
+
 .back-link:hover{color:var(--primary)}
+
 .layout-2col{display:grid;grid-template-columns:1fr 300px;gap:28px;padding:30px 0;align-items:start}
+
 .layout-2col .sidebar{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px 22px;position:sticky;top:20px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+
 .layout-2col .sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600;border-bottom:none;padding:0}
+
 .layout-2col .sidebar ul{list-style:none}
+
 .layout-2col .sidebar li{margin-bottom:6px}
+
 .layout-2col .sidebar a{color:var(--primary);font-size:.92rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
+
 .layout-2col .sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
+
 @media(max-width:900px){.layout-2col{grid-template-columns:1fr}}
 
+
+
 </style>
+
+
+
+
+
+
 
 
 
 
 
 <style id="hero-img-cap-v3">
+
 section.block{overflow:auto}
+
 section.block .hero-img-wrap{float:right!important;max-width:340px!important;width:340px!important;max-height:280px!important;margin:6px 0 16px 24px!important;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block!important}
+
 section.block .hero-img-wrap img{max-width:100%!important;max-height:280px!important;width:100%!important;height:280px!important;object-fit:cover!important;display:block!important;border-radius:10px}
+
 .inline-img{float:right!important;max-width:300px!important;width:300px!important;max-height:220px!important;margin:6px 0 18px 20px!important;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+
 .inline-img img{max-width:100%!important;max-height:220px!important;width:100%!important;height:220px!important;object-fit:cover!important;display:block!important;border-radius:10px}
+
 section.block h2{clear:both;margin-top:0}
+
 @media (max-width:768px){
+
   section.block{overflow:visible}
+
   section.block .hero-img-wrap{float:none!important;width:100%!important;max-width:100%!important;max-height:240px!important;margin:18px auto!important}
+
   section.block .hero-img-wrap img{height:240px!important;max-height:240px!important}
+
   .inline-img{float:none!important;width:100%!important;max-width:100%!important;max-height:220px!important;margin:18px auto!important}
+
 }
+
 main img:not([class]){max-width:100%;height:auto}
+
 </style>
+
 <!-- logo-unique-v1 -->
+
 <meta name="layout" content="L5">
 
 
 
+
+
+
+
 <style id="cta-center-fix">
+
 .cta-block,section.block.cta-block{margin:32px auto!important;max-width:760px!important;text-align:center!important}
+
 .cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
+
 .cta-block h2{text-align:center!important}
+
 .cta-block p{text-align:center!important}
+
 .cta-buttons{display:flex!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important}
+
 .cta-block .cta-email{display:inline-block;padding:14px 28px;background:#fff;color:var(--primary)!important;border-radius:9999px;font-weight:700;text-decoration:none;font-size:1.05rem}
+
 .cta-block .cta-email:hover{background:var(--accent);color:#fff!important;transform:translateY(-1px)}
+
 @media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
+
 </style>
-<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><style></style></head>
+
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><!--selfhost-fonts--><link rel="preload" href="fonts/source-sans-3-400-latin.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high"><style></style><style id="selfhost-fonts">body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style></head>
+
 <body>
+
 <header>
+
 <div class="container">
+
 <a class="brand-link" href="/">
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40"><rect width="64" height="64" rx="10" fill="#0a2540"/><path d="M32 8 L32 48 M28 8 L36 8 M30 48 L34 48 M32 24 L24 30 M32 24 L40 30 M32 36 L24 42 M32 36 L40 42" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="32" cy="56" r="3" fill="#3b82f6"/></svg>
+
 <div class="brand-line">
+
   <span class="brand-name">IngeoTecnia</span>
+
   <span class="brand-sub">Ingeniería Geotécnica</span>
+
 </div>
+
 </a>
+
 <nav class="navbar" aria-label="principal">
+
   <a href="/" class="nav-link">Inicio</a>
+
   <div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Servicios<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/sondajes-spt/" role="menuitem">Sondajes SPT</a><a href="/laboratorio-mecanica-suelos/" role="menuitem">Laboratorio de Mecánica de Suelos</a></div></div>
+
   <a href="/equipo/juan-carlos-vargas/" class="nav-link">Equipo</a>
+
 </nav>
+
 <button class="nav-burger" aria-label="menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
 </div>
+
 </header>
 
+
+
 <section class="hero">
-<div class="container">
-<nav class="breadcrumb">
-  <a href="/">Inicio</a> ›
-  <a href="/proyectos/">Proyectos</a> ›
-  <span>Ensayo de laboratorio para estabilización de suelos en Concepción</span>
-</nav>
-<h1>Ensayo de laboratorio para estabilización de suelos en Concepción</h1>
-<p class="subtitle">Evaluación de estabilización con cal para subrasante de pavimento industrial en Concepción.</p>
-</div>
-</section>
 
 <div class="container">
+
+<nav class="breadcrumb">
+
+  <a href="/">Inicio</a> ›
+
+  <a href="/proyectos/">Proyectos</a> ›
+
+  <span>Ensayo de laboratorio para estabilización de suelos en Concepción</span>
+
+</nav>
+
+<h1>Ensayo de laboratorio para estabilización de suelos en Concepción</h1>
+
+<p class="subtitle">Evaluación de estabilización con cal para subrasante de pavimento industrial en Concepción.</p>
+
+</div>
+
+</section>
+
+
+
+<div class="container">
+
 <a class="back-link" href="/proyectos/">← Volver a Proyectos</a>
+
 <div class="layout-2col">
+
 <main>
 
 
+
+
+
 <section class="block">
+
   <table class="project-meta-table">
+
     <tr><td>Cliente</td><td>Empresa constructora privada</td></tr>
+
     <tr><td>Ciudad</td><td>Concepción</td></tr>
+
     <tr><td>Servicio</td><td><span>Laboratorio de Mecánica de Suelos</span></td></tr>
+
     <tr><td>Año</td><td>2023</td></tr>
+
   </table>
+
 </section>
 
 
+
+
+
 <section class="block">
+
   <div class="project-section">
+
     <h3>Desafío técnico</h3>
+
     <p>En un proyecto de pavimentación industrial en Concepción, se encontró un suelo arcilloso de alta plasticidad (CH) con baja capacidad de soporte (CBR < 2%). Se requería evaluar la efectividad de la estabilización con cal para cumplir con los requisitos de la normativa DS61 (Ministerio de Vivienda y Urbanismo) y lograr un CBR de diseño ≥ 5% para la subrasante.</p>
+
   </div>
+
   <div class="project-section">
+
     <h3>Solución implementada</h3>
+
     <p>Se realizaron ensayos de laboratorio para caracterizar el suelo natural: límites de Atterberg, granulometría, compactación Proctor estándar y CBR. Luego, se prepararon mezclas con 3%, 5% y 7% de cal hidratada, curadas durante 7 días. Se ejecutaron ensayos de CBR en muestras compactadas al 95% de la densidad máxima seca. Los resultados mostraron que con 5% de cal se alcanzó un CBR de 8% y una reducción de plasticidad (límite líquido de 55% a 40%). Se verificó la durabilidad mediante ciclos de humedecimiento-secado.</p>
+
   </div>
+
   <div class="project-section">
+
     <h3>Resultado</h3>
+
     <div class="project-result">Se recomendó estabilizar la subrasante con 5% de cal, logrando un CBR de diseño de 7%, superior al mínimo exigido. El pavimento se diseñó con un espesor reducido en 10 cm, generando ahorros en materiales. El laboratorio emitió certificados de control de calidad.</div>
+
   </div>
+
 </section>
 
 
+
+
+
 <section class="block">
+
   <h2>Servicios relacionados</h2>
+
   <p>
+
     <span>Laboratorio de Mecánica de Suelos</span> como parte de nuestros 
+
     <a href="/estudio-geotecnico-en-concepcion/">estudios en Concepción</a>.
+
     <a href="/proyectos/">Ver más proyectos →</a>
+
   </p>
+
 </section>
+
+
+
 
 
 <section class="block">
+
   <h2>Otros proyectos</h2>
+
   <ul style="list-style:none;display:flex;flex-direction:column;gap:8px"><li><a href="/proyectos/estudio-geotecnico-edificio-residencial-antofagasta/">Estudio Geotecnico Edificio Residencial Antofagasta</a></li><li><a href="/proyectos/analisis-estabilidad-taludes-valparaiso/">Analisis Estabilidad Taludes Valparaiso</a></li></ul>
+
 </section>
+
+
 
 <section class="block cta-block">
+
   <h2>Solicite una Cotización</h2>
+
   <p>Nuestro equipo evalúa su proyecto sin compromiso.</p>
+
   <div class="cta-buttons">
-    <a class="cta-email" href="mailto:contacto@ingeotecnia.net?subject=Contactar">Contactar</a>
+
+    <a class="cta-email" href="/cdn-cgi/l/email-protection#11727e7f657072657e51787f76747e6574727f78703f7f74652e6264737b7472652c527e7f657072657063">Contactar</a>
+
   </div>
+
   <p class="cta-email-note">
-    <a href="mailto:contacto@ingeotecnia.net"><strong>contacto@ingeotecnia.net</strong></a>
+
+    <a href="/cdn-cgi/l/email-protection#294a46475d484a5d466940474e4c465d4c4a47404807474c5d"><strong><span class="__cf_email__" data-cfemail="74171b1a001517001b341d1a13111b0011171a1d155a1a1100">[email&#160;protected]</span></strong></a>
+
   </p>
+
 </section>
+
+
+
+
 
 
 
 </main>
 
+
+
 <aside class="sidebar"><h3>También te puede interesar</h3><ul><li><a href="/">Sondajes SPT</a></li>
+
 <li><a href="/sondajes-spt/">Sondajes SPT</a></li>
+
 <li><a href="/laboratorio-mecanica-suelos/">Laboratorio de Mecanica de Suelos</a></li>
+
 <li><a href="/estabilidad-taludes/">Estabilidad de Taludes</a></li>
+
 <li><a href="/diseno-muros-contencion/">Diseno de Muros de Contencion</a></li></ul></aside>
-</div>
+
 </div>
 
+</div>
+
+
+
 <footer>
+
 <div class="container">
+
 <div>
+
   <h4>IngeoTecnia</h4>
+
   <p>Servicios geotécnicos profesionales (Chile).</p>
+
 </div>
+
 <div>
+
   <h4>Contacto</h4>
-  <p>Email: <a href="mailto:contacto@ingeotecnia.net">contacto@ingeotecnia.net</a></p>
+
+  <p>Email: <a href="/cdn-cgi/l/email-protection#fc9f9392889d9f8893bc95929b999388999f92959dd2929988"><span class="__cf_email__" data-cfemail="43202c2d372220372c032a2d24262c3726202d2a226d2d2637">[email&#160;protected]</span></a></p>
+
 </div>
+
 <div>
+
   <h4>Servicios</h4>
+
   <p><a href="/sondajes-spt/">Sondajes SPT</a></p><p><a href="/laboratorio-mecanica-suelos/">Laboratorio de Mecánica de Suelos</a></p><p></p><p></p>
+
 </div>
+
 <div class="copyr">&copy; 2026 IngeoTecnia · Todos los derechos reservados</div>
+
 </div>
+
 </footer>
-<script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
 (function(){
+
   document.addEventListener('click', function(e){
+
     var btn = e.target.closest('.nav-toggle');
+
     var dds = document.querySelectorAll('.nav-dd');
+
     if(btn){
+
       var parent = btn.parentElement;
+
       var wasOpen = parent.classList.contains('open');
+
       dds.forEach(function(d){ d.classList.remove('open'); var t=d.querySelector('.nav-toggle'); if(t) t.setAttribute('aria-expanded','false'); });
+
       if(!wasOpen){ parent.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+
       e.preventDefault();
+
     } else if(!e.target.closest('.dd-menu')){
+
       dds.forEach(function(d){ d.classList.remove('open'); var t=d.querySelector('.nav-toggle'); if(t) t.setAttribute('aria-expanded','false'); });
+
     }
+
   });
+
 })();
+
 </script>
+
 </body>
+
 </html>
